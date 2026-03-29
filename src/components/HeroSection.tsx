@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-background">
+    <section className="relative h-screen w-full overflow-hidden bg-background">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -13,39 +12,32 @@ const HeroSection = () => {
         muted
         playsInline
       />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/50" />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-background/60" />
 
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center text-center pt-[200px] md:pt-[280px] pb-[102px] px-6">
-        {/* Badge */}
-        <div className="flex items-center gap-2 rounded-full border border-foreground/20 bg-foreground/10 px-4 py-2 mb-10">
-          <span className="w-1 h-1 rounded-full bg-foreground" />
-          <span className="text-[13px] font-medium text-foreground/60">
-            Early access available from
-          </span>
-          <span className="text-[13px] font-medium text-foreground">
-            May 1, 2026
-          </span>
+      {/* Hero Content — bottom-left aligned, editorial */}
+      <div className="absolute bottom-0 left-0 right-0 z-20 px-6 md:px-12 lg:px-20 pb-12 md:pb-20">
+        <div className="max-w-5xl">
+          <p className="text-foreground/40 text-[11px] tracking-[0.3em] uppercase font-normal mb-6">
+            Contemporary Art Space — Est. 2020
+          </p>
+          <h1 className="text-gradient-hero text-[clamp(2.5rem,8vw,7rem)] font-light leading-[0.95] tracking-tight">
+            Where Art
+            <br />
+            <span className="italic font-normal">Breathes</span>
+          </h1>
+          <div className="mt-8 md:mt-12 flex items-end justify-between">
+            <p className="text-foreground/40 text-sm font-light max-w-xs leading-relaxed hidden md:block">
+              A curated space for contemporary voices pushing the boundaries of visual expression.
+            </p>
+            <p className="text-foreground/30 text-[11px] tracking-[0.2em] uppercase">
+              Scroll to explore ↓
+            </p>
+          </div>
         </div>
-
-        {/* Heading */}
-        <h1 className="text-gradient-hero text-4xl md:text-[56px] font-medium leading-[1.28] max-w-[613px]">
-          Web3 at the Speed of Experience
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mt-6 text-[15px] font-normal text-foreground/70 max-w-[680px] leading-relaxed">
-          Powering seamless experiences and real-time connections, EOS is the base for creators who move with purpose, leveraging resilience, speed, and scale to shape the future.
-        </p>
-
-        {/* CTA */}
-        <Button variant="hero" className="mt-10 text-sm px-[29px] py-[11px] h-auto">
-          Join Waitlist
-        </Button>
       </div>
     </section>
   );
