@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-0 right-0 z-20 px-6 md:px-12 lg:px-20 pb-12 md:pb-20">
         <div className="max-w-5xl">
           <p className="text-foreground/40 text-[11px] tracking-[0.3em] uppercase font-normal mb-6">
-            Contemporary Art Space — Est. 2020
+            Celeste Gallery — Est. 2020
           </p>
           <h1 className="text-gradient-hero text-[clamp(2.5rem,8vw,7rem)] font-light leading-[0.95] tracking-tight">
             Where Art
