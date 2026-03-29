@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-12 lg:px-20 py-6 md:py-8">
       {/* Logo */}
-      <a href="#" className="text-foreground text-sm tracking-[0.3em] uppercase font-light">
-        Gallery
+      <a href="#" className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">
+        Celeste
       </a>
 
       {/* Nav Links — hidden on mobile */}

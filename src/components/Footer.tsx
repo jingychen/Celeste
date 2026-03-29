@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr_auto] gap-12 md:gap-16">
         {/* Logo */}
         <div>
-          <span className="text-foreground text-sm tracking-[0.3em] uppercase font-light">Gallery</span>
+          <span className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">Celeste</span>
         </div>
 
         {/* Nav */}
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-16 pt-6 border-t border-border flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <p className="text-[11px] text-foreground/15 tracking-[0.1em] uppercase">© 2026 Gallery. All rights reserved.</p>
+        <p className="text-[11px] text-foreground/15 tracking-[0.1em] uppercase">© 2026 Celeste Gallery. All rights reserved.</p>
         <p className="text-[11px] text-foreground/15 tracking-[0.1em] uppercase">New York — London — Berlin</p>
       </div>
     </footer>
