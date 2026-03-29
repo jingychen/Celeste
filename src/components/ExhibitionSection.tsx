@@ -1,13 +1,6 @@
-import exhibition1 from "@/assets/exhibition-1.jpg";
-import exhibition2 from "@/assets/exhibition-2.jpg";
-import exhibition3 from "@/assets/exhibition-3.jpg";
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-
-const exhibitions = [
-  { title: "Fragments of Gold", artist: "Marcus Veil", date: "Jun 12 — Aug 30, 2026", image: exhibition1, number: "01" },
-  { title: "Silent Forms", artist: "Collective Show", date: "Sep 5 — Nov 15, 2026", image: exhibition2, number: "02" },
-  { title: "Earth & Ember", artist: "Clara Montague", date: "Dec 1, 2026 — Feb 28, 2027", image: exhibition3, number: "03" },
-];
+import { exhibitions } from "@/data/exhibitions";
 
 const ExhibitionSection = () => {
   return (
@@ -26,9 +19,10 @@ const ExhibitionSection = () => {
       {/* Exhibition Grid — asymmetric */}
       <div className="px-6 md:px-12 lg:px-20">
         {exhibitions.map((ex, i) => (
-          <div
+          <Link
+            to={`/exhibition/${ex.slug}`}
             key={i}
-            className={`group cursor-pointer border-t border-border py-8 md:py-12 ${
+            className={`group block cursor-pointer border-t border-border py-8 md:py-12 ${
               i === 0 ? "md:grid md:grid-cols-[1fr_1.5fr] md:gap-12 items-start" :
               i === 1 ? "md:grid md:grid-cols-[1.5fr_1fr] md:gap-12 items-start" :
               "md:grid md:grid-cols-[1fr_1.5fr] md:gap-12 items-start"
@@ -58,7 +52,7 @@ const ExhibitionSection = () => {
                 className="w-full h-[300px] md:h-[450px] object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
               />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
