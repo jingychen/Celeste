@@ -1,57 +1,68 @@
-import { ChevronDown, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Instagram } from "lucide-react";
 
-const navLinks = ["Get Started", "Developers", "Features", "Resources"];
+const navLinks = [
+  { label: "Homepage", href: "#" },
+  { label: "Exhibition", href: "#exhibition" },
+  { label: "Signed Artist", href: "#artists" },
+  { label: "Open Call", href: "#open-call" },
+  { label: "Awards", href: "#awards" },
+  { label: "About", href: "#about" },
+];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-[120px] py-5">
+    <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-12 lg:px-20 py-6 md:py-8">
       {/* Logo */}
-      <div className="text-foreground font-semibold text-xl tracking-tight" style={{ width: 187 }}>
-        LOGOIPSUM
-      </div>
+      <a href="#" className="text-foreground text-sm tracking-[0.3em] uppercase font-light">
+        Gallery
+      </a>
 
       {/* Nav Links — hidden on mobile */}
-      <div className="hidden md:flex items-center gap-[30px]">
+      <div className="hidden lg:flex items-center gap-10">
         {navLinks.map((link) => (
           <a
-            key={link}
-            href="#"
-            className="flex items-center gap-[14px] text-foreground text-sm font-medium hover:text-gold transition-colors"
+            key={link.label}
+            href={link.href}
+            className="text-foreground/50 text-[13px] tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors duration-500"
           >
-            {link}
-            <ChevronDown size={14} />
+            {link.label}
           </a>
         ))}
       </div>
 
-      {/* CTA */}
-      <div className="flex items-center gap-4">
-        <Button variant="heroDark" className="text-sm px-[29px] py-[11px] h-auto">
-          Join Waitlist
-        </Button>
+      {/* Instagram + Mobile Toggle */}
+      <div className="flex items-center gap-6">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground/50 hover:text-foreground transition-colors duration-500"
+        >
+          <Instagram size={18} />
+        </a>
         <button
-          className="md:hidden text-foreground"
+          className="lg:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border p-6 flex flex-col gap-4 md:hidden z-50">
+        <div className="absolute top-full left-0 right-0 bg-background/98 backdrop-blur-sm border-b border-border px-6 py-10 flex flex-col gap-6 lg:hidden z-50">
           {navLinks.map((link) => (
             <a
-              key={link}
-              href="#"
-              className="flex items-center gap-[14px] text-foreground text-sm font-medium"
+              key={link.label}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="text-foreground/60 text-sm tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors"
             >
-              {link}
-              <ChevronDown size={14} />
+              {link.label}
             </a>
           ))}
         </div>

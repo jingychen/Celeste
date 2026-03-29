@@ -1,22 +1,31 @@
-import { Button } from "@/components/ui/button";
-
 const KeepInTouchSection = () => {
   return (
-    <section id="keep-in-touch" className="bg-background py-24 md:py-32 px-6 md:px-[120px] text-center">
-      <p className="text-gold text-sm font-medium tracking-widest uppercase mb-4">Stay Connected</p>
-      <h2 className="text-3xl md:text-5xl font-medium text-foreground mb-6">Keep in Touch</h2>
-      <p className="text-foreground/60 text-[15px] max-w-lg mx-auto mb-10 leading-relaxed">
-        Subscribe to our newsletter for exhibition previews, artist spotlights, and exclusive invitations.
-      </p>
-      <div className="flex flex-col sm:flex-row items-center gap-4 max-w-md mx-auto">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="flex-1 w-full bg-secondary border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold"
-        />
-        <Button variant="hero" className="text-sm px-8 py-3 h-auto whitespace-nowrap">
-          Subscribe
-        </Button>
+    <section id="keep-in-touch" className="bg-secondary/30 border-t border-b border-border py-20 md:py-32 px-6 md:px-12 lg:px-20">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 lg:gap-32 items-end">
+        <div>
+          <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Newsletter</span>
+          <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
+            Keep in<br /><span className="italic font-normal text-foreground/60">Touch</span>
+          </h2>
+        </div>
+
+        <div>
+          <p className="text-foreground/35 text-[15px] font-light leading-[1.8] mb-8">
+            Exhibition previews, artist spotlights, and exclusive invitations — delivered to your inbox.
+          </p>
+          <div className="border-t border-border pt-6">
+            <div className="flex items-center gap-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="flex-1 bg-transparent text-sm text-foreground placeholder:text-foreground/20 focus:outline-none font-light tracking-wide py-2"
+              />
+              <button className="text-gold text-[13px] tracking-[0.1em] uppercase font-normal hover:text-foreground transition-colors duration-500 shrink-0">
+                Subscribe →
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
