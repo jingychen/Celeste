@@ -14,6 +14,30 @@ const navLinks = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMobileOpen(false);
+
+    if (href === "/") {
+      if (location.pathname === "/") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        navigate("/");
+      }
+      return;
+    }
+
+    const hash = href.replace("/", "");
+    if (location.pathname === "/") {
+      const el = document.querySelector(hash);
+      el?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(href);
+    }
+  };
 
   return (
     <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-12 lg:px-20 py-6 md:py-8">
