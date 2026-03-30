@@ -1,14 +1,15 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Instagram } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Homepage", href: "#" },
-  { label: "Exhibition", href: "#exhibition" },
-  { label: "Signed Artist", href: "#artists" },
-  { label: "Open Call", href: "#open-call" },
-  { label: "Awards", href: "#awards" },
-  { label: "About", href: "#about" },
+  { label: "Homepage", href: "/" },
+  { label: "Exhibition", href: "/#exhibition" },
+  { label: "Signed Artist", href: "/#artists" },
+  { label: "Open Call", href: "/#open-call" },
+  { label: "Awards", href: "/#awards" },
+  { label: "About", href: "/#about" },
 ];
 
 const Navbar = () => {
