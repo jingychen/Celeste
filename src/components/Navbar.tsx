@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-12 lg:px-20 py-6 md:py-8">
       {/* Logo */}
-      <a href="#" className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">
+      <a href="/" onClick={(e) => handleNavClick(e, "/")} className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">
         Celeste
       </a>
 
@@ -52,6 +52,7 @@ const Navbar = () => {
           <a
             key={link.label}
             href={link.href}
+            onClick={(e) => handleNavClick(e, link.href)}
             className="text-foreground/50 text-[13px] tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors duration-500"
           >
             {link.label}
