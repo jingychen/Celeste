@@ -1,12 +1,10 @@
 import { useParams, Link } from "react-router-dom";
-import { useExhibitions } from "@/hooks/useExhibitions";
+import { exhibitions } from "@/data/exhibitions";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
 const ExhibitionDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { exhibitions } = useExhibitions();
-
   const exhibition = exhibitions.find((e) => e.slug === slug);
   const currentIndex = exhibitions.findIndex((e) => e.slug === slug);
   const nextExhibition = exhibitions[(currentIndex + 1) % exhibitions.length];
@@ -24,6 +22,7 @@ const ExhibitionDetail = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
+      {/* Hero — poster + title side by side */}
       <section className="pt-28 md:pt-36 pb-16 md:pb-24 px-6 md:px-12 lg:px-20">
         <Link
           to="/exhibitions"
@@ -33,17 +32,22 @@ const ExhibitionDetail = () => {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12 lg:gap-20 items-start">
+          {/* Poster — portrait, prominent */}
           <div className="w-full max-w-[400px] lg:max-w-[440px] mx-auto lg:mx-0">
             <div className="relative">
               <img
                 src={exhibition.poster}
                 alt={`${exhibition.title} poster`}
+                width={700}
+                height={1000}
                 className="w-full h-auto object-cover"
               />
+              {/* Subtle shadow beneath poster */}
               <div className="absolute -bottom-6 left-4 right-4 h-12 bg-gold/5 blur-2xl" />
             </div>
           </div>
 
+          {/* Title & Meta — right side */}
           <div className="flex flex-col justify-between min-h-[400px] lg:min-h-[560px]">
             <div>
               <span className="text-foreground/15 text-[11px] tracking-[0.2em] font-normal editorial-number">
@@ -91,6 +95,7 @@ const ExhibitionDetail = () => {
         </div>
       </section>
 
+      {/* Description */}
       <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-32">
           <div>
@@ -106,6 +111,7 @@ const ExhibitionDetail = () => {
         </div>
       </section>
 
+      {/* Exhibition Image — full width */}
       <section className="px-6 md:px-12 lg:px-20 pb-16 md:pb-24">
         <div className="overflow-hidden">
           <img
@@ -117,35 +123,34 @@ const ExhibitionDetail = () => {
         </div>
       </section>
 
-      {nextExhibition && prevExhibition && (
-        <section className="border-t border-border">
-          <div className="grid grid-cols-2">
-            <Link
-              to={`/exhibition/${prevExhibition.slug}`}
-              className="group border-r border-border px-6 md:px-12 lg:px-20 py-12 md:py-16 hover:bg-secondary/30 transition-colors duration-500"
-            >
-              <div className="flex items-center gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
-                <ArrowLeft size={14} /> Previous
-              </div>
-              <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
-                {prevExhibition.title}
-              </p>
-            </Link>
+      {/* Prev / Next navigation */}
+      <section className="border-t border-border">
+        <div className="grid grid-cols-2">
+          <Link
+            to={`/exhibition/${prevExhibition.slug}`}
+            className="group border-r border-border px-6 md:px-12 lg:px-20 py-12 md:py-16 hover:bg-secondary/30 transition-colors duration-500"
+          >
+            <div className="flex items-center gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
+              <ArrowLeft size={14} /> Previous
+            </div>
+            <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
+              {prevExhibition.title}
+            </p>
+          </Link>
 
-            <Link
-              to={`/exhibition/${nextExhibition.slug}`}
-              className="group px-6 md:px-12 lg:px-20 py-12 md:py-16 text-right hover:bg-secondary/30 transition-colors duration-500"
-            >
-              <div className="flex items-center justify-end gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
-                Next <ArrowRight size={14} />
-              </div>
-              <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
-                {nextExhibition.title}
-              </p>
-            </Link>
-          </div>
-        </section>
-      )}
+          <Link
+            to={`/exhibition/${nextExhibition.slug}`}
+            className="group px-6 md:px-12 lg:px-20 py-12 md:py-16 text-right hover:bg-secondary/30 transition-colors duration-500"
+          >
+            <div className="flex items-center justify-end gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
+              Next <ArrowRight size={14} />
+            </div>
+            <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
+              {nextExhibition.title}
+            </p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };

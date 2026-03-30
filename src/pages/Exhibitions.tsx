@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { useExhibitions } from "@/hooks/useExhibitions";
+import { exhibitions } from "@/data/exhibitions";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Exhibitions = () => {
-  const { exhibitions } = useExhibitions();
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -23,7 +21,7 @@ const Exhibitions = () => {
         {exhibitions.map((ex, i) => (
           <Link
             to={`/exhibition/${ex.slug}`}
-            key={ex.slug}
+            key={i}
             className={`group block cursor-pointer border-t border-border py-8 md:py-12 md:grid md:gap-12 items-start ${
               i % 2 === 0
                 ? "md:grid-cols-[1fr_1.5fr]"
