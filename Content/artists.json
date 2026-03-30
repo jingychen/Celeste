@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "marcus-veil",
+    "name": "Marcus Veil",
+    "medium": "Oil on Canvas, Gold Leaf",
+    "location": "Berlin, DE",
+    "portrait": "/images/uploads/artist-1.jpg",
+    "bio": [
+      "Marcus Veil is a Berlin-based painter whose work explores the intersection of destruction and beauty. Drawing from the Japanese philosophy of kintsugi, Veil creates large-scale canvases where dark surfaces are interrupted by luminous veins of gold.",
+      "His practice involves months of layering oil paint, then deliberately fracturing the surface to reveal golden seams beneath — a meditation on resilience and the beauty of imperfection."
+    ],
+    "works": [
+      { "title": "Golden Fracture I", "year": "2026", "image": "/images/uploads/artist-1.jpg" },
+      { "title": "Veins of Light", "year": "2025", "image": "/images/uploads/artist-1.jpg" },
+      { "title": "Broken Horizon", "year": "2024", "image": "/images/uploads/artist-1.jpg" }
+    ]
+  },
+  {
+    "slug": "elena-sorano",
+    "name": "Elena Sorano",
+    "medium": "Sculpture & Installation",
+    "location": "Milan, IT",
+    "portrait": "/images/uploads/artist-2.jpg",
+    "bio": [
+      "Elena Sorano's sculptural practice interrogates the tension between presence and absence. Working primarily in marble and bronze, she creates forms that seem to emerge from — or dissolve into — the spaces they inhabit.",
+      "Her installations transform architectural environments into immersive landscapes of contemplation."
+    ],
+    "works": [
+      { "title": "Void Study III", "year": "2026", "image": "/images/uploads/artist-2.jpg" },
+      { "title": "Emergence", "year": "2025", "image": "/images/uploads/artist-2.jpg" },
+      { "title": "Still Echo", "year": "2024", "image": "/images/uploads/artist-2.jpg" }
+    ]
+  },
+  {
+    "slug": "leo-tanaka",
+    "name": "Leo Tanaka",
+    "medium": "Mixed Media & Digital",
+    "location": "Tokyo, JP",
+    "portrait": "/images/uploads/artist-3.jpg",
+    "bio": [
+      "Leo Tanaka bridges the physical and digital worlds through mixed media works that combine traditional Japanese printmaking techniques with generative algorithms and augmented reality.",
+      "His practice questions the boundaries between organic and synthetic."
+    ],
+    "works": [
+      { "title": "Data Garden", "year": "2026", "image": "/images/uploads/artist-3.jpg" },
+      { "title": "Pixel Bloom", "year": "2025", "image": "/images/uploads/artist-3.jpg" },
+      { "title": "Neural Landscape", "year": "2024", "image": "/images/uploads/artist-3.jpg" }
+    ]
+  }
+]
