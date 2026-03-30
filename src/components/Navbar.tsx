@@ -1,66 +1,41 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Instagram } from "lucide-react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { label: "Homepage", href: "/" },
-  { label: "Exhibition", href: "/#exhibition" },
-  { label: "Signed Artist", href: "/#artists" },
-  { label: "Open Call", href: "/#open-call" },
-  { label: "Awards", href: "/#awards" },
-  { label: "About", href: "/#about" },
+  { label: "Exhibition", href: "/exhibitions" },
+  { label: "Signed Artist", href: "/artists" },
+  { label: "Open Call", href: "/open-call" },
+  { label: "Awards", href: "/awards" },
+  { label: "About", href: "/about" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    setMobileOpen(false);
-
-    if (href === "/") {
-      if (location.pathname === "/") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      } else {
-        navigate("/");
-      }
-      return;
-    }
-
-    const hash = href.replace("/", "");
-    if (location.pathname === "/") {
-      const el = document.querySelector(hash);
-      el?.scrollIntoView({ behavior: "smooth" });
-    } else {
-      navigate(href);
-    }
-  };
 
   return (
     <nav className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-6 md:px-12 lg:px-20 py-6 md:py-8">
-      {/* Logo */}
-      <a href="/" onClick={(e) => handleNavClick(e, "/")} className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">
+      <Link to="/" className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">
         Celeste
-      </a>
+      </Link>
 
-      {/* Nav Links — hidden on mobile */}
       <div className="hidden lg:flex items-center gap-10">
         {navLinks.map((link) => (
-          <a
+          <Link
             key={link.label}
-            href={link.href}
-            onClick={(e) => handleNavClick(e, link.href)}
-            className="text-foreground/50 text-[13px] tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors duration-500"
+            to={link.href}
+            className={`text-[13px] tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors duration-500 ${
+              location.pathname === link.href ? "text-foreground" : "text-foreground/50"
+            }`}
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </div>
 
-      {/* Instagram + Mobile Toggle */}
       <div className="flex items-center gap-6">
         <a
           href="https://instagram.com"
@@ -78,18 +53,17 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {mobileOpen && (
         <div className="absolute top-full left-0 right-0 bg-background/98 backdrop-blur-sm border-b border-border px-6 py-10 flex flex-col gap-6 lg:hidden z-50">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
+              to={link.href}
+              onClick={() => setMobileOpen(false)}
               className="text-foreground/60 text-sm tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}

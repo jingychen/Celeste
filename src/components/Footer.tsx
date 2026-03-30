@@ -16,6 +16,7 @@ const Footer = () => {
         {/* Logo */}
         <div>
           <span className="text-foreground text-lg tracking-[0.25em] uppercase font-extralight">Celeste</span>
+          <p className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase mt-2">London</p>
         </div>
 
         {/* Nav */}
