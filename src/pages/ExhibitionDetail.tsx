@@ -25,7 +25,7 @@ const ExhibitionDetail = () => {
       {/* Hero — poster + title side by side */}
       <section className="pt-28 md:pt-36 pb-16 md:pb-24 px-6 md:px-12 lg:px-20">
         <Link
-          to="/#exhibition"
+          to="/exhibitions"
           className="inline-flex items-center gap-2 text-foreground/30 text-[12px] tracking-[0.15em] uppercase hover:text-gold transition-colors duration-500 mb-12 md:mb-16"
         >
           <ArrowLeft size={14} /> Back to Exhibitions
