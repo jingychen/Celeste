@@ -24,7 +24,7 @@ const HeroSection = () => {
           <p className="text-foreground/40 text-[11px] tracking-[0.3em] uppercase font-normal mb-6">
             Celeste Gallery — Est. 2020
           </p>
-          <h1 className="text-gradient-hero text-[clamp(2rem,6vw,5rem)] font-light leading-[0.95] tracking-tight">
+          <h1 className="text-gradient-hero text-[clamp(2.5rem,8vw,7rem)] font-light leading-[0.95] tracking-tight">
             Where Art
             <br />
             <span className="italic font-normal">Breathes</span>
