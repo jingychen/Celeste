@@ -1,12 +1,34 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>Content Manager</title>
-</head>
-<body>
-  <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- 添加登录容器 -->
+    <div data-netlify-identity-menu></div>
+    
+    <!-- 或者手动添加忘记密码链接 -->
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="#recovery_modal" onclick="netlifyIdentity.open('recovery')">忘记密码？</a>
+    </div>
+
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <script>
+      // 初始化 Netlify Identity
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
