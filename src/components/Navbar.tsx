@@ -85,7 +85,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-foreground/60 text-sm tracking-[0.08em] uppercase font-normal hover:text-foreground transition-colors"
             >
               {link.label}
