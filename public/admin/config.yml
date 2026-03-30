@@ -1,0 +1,97 @@
+backend:
+  name: git-gateway
+  branch: feature/decap-cms
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: exhibitions
+    label: Exhibitions
+    label_singular: Exhibition
+    folder: content/exhibitions
+    create: true
+    delete: true
+    format: json
+    extension: json
+    identifier_field: slug
+    summary: "{{number}} — {{title}}"
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: URL-friendly identifier (e.g. fragments-of-gold)
+      - label: Number
+        name: number
+        widget: string
+        hint: Display order number (e.g. 01, 02, 03)
+      - label: Title
+        name: title
+        widget: string
+      - label: Artist
+        name: artist
+        widget: string
+      - label: Date
+        name: date
+        widget: string
+        hint: Exhibition date range (e.g. Jun 12 — Aug 30, 2026)
+      - label: Location
+        name: location
+        widget: string
+      - label: Cover Image
+        name: image
+        widget: image
+      - label: Poster Image
+        name: poster
+        widget: image
+      - label: Description
+        name: description
+        widget: text
+        hint: Separate paragraphs with a blank line
+      - label: Details
+        name: details
+        widget: object
+        fields:
+          - { label: Medium, name: medium, widget: string }
+          - { label: Works, name: works, widget: string }
+          - { label: Curated By, name: curated, widget: string }
+
+  - name: artists
+    label: Artists
+    label_singular: Artist
+    folder: content/artists
+    create: true
+    delete: true
+    format: json
+    extension: json
+    identifier_field: slug
+    summary: "{{name}}"
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: URL-friendly identifier (e.g. marcus-veil)
+      - label: Name
+        name: name
+        widget: string
+      - label: Medium
+        name: medium
+        widget: string
+      - label: Location
+        name: location
+        widget: string
+      - label: Portrait
+        name: portrait
+        widget: image
+      - label: Biography
+        name: bio
+        widget: text
+        hint: Separate paragraphs with a blank line
+      - label: Selected Works
+        name: works
+        widget: list
+        summary: "{{fields.title}} ({{fields.year}})"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Year, name: year, widget: string }
+          - { label: Image, name: image, widget: image }

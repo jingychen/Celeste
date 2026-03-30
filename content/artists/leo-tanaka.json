@@ -1,0 +1,13 @@
+{
+  "slug": "leo-tanaka",
+  "name": "Leo Tanaka",
+  "medium": "Mixed Media & Digital",
+  "location": "Tokyo, JP",
+  "portrait": "/images/uploads/artist-3.jpg",
+  "bio": "Leo Tanaka bridges the physical and digital worlds through mixed media works that combine traditional Japanese printmaking techniques with generative algorithms and augmented reality.\n\nHis practice questions the boundaries between organic and synthetic, creating pieces that evolve over time through embedded digital layers accessible via companion applications.",
+  "works": [
+    { "title": "Data Garden", "year": "2026", "image": "/images/uploads/artist-3.jpg" },
+    { "title": "Pixel Bloom", "year": "2025", "image": "/images/uploads/artist-3.jpg" },
+    { "title": "Neural Landscape", "year": "2024", "image": "/images/uploads/artist-3.jpg" }
+  ]
+}
