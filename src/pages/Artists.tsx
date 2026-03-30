@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { artists } from "@/data/artists";
+import { useArtists } from "@/hooks/useArtists";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Artists = () => {
+  const { artists } = useArtists();
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -21,7 +23,7 @@ const Artists = () => {
         {artists.map((artist, i) => (
           <Link
             to={`/artist/${artist.slug}`}
-            key={i}
+            key={artist.slug}
             className="group flex flex-col md:flex-row md:items-center border-t border-border px-0 py-6 md:py-0 hover:bg-secondary/50 transition-colors duration-500 cursor-pointer"
           >
             <div className="w-full md:w-[200px] h-[280px] md:h-[160px] overflow-hidden shrink-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 md:mr-12">

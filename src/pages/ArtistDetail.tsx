@@ -1,11 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import { artists } from "@/data/artists";
+import { useArtists } from "@/hooks/useArtists";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const ArtistDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { artists } = useArtists();
   const artist = artists.find((a) => a.slug === slug);
 
   if (!artist) {
@@ -29,7 +30,6 @@ const ArtistDetail = () => {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12 lg:gap-20 items-start">
-          {/* Portrait */}
           <div className="w-full max-w-[380px] mx-auto lg:mx-0">
             <img
               src={artist.portrait}
@@ -38,7 +38,6 @@ const ArtistDetail = () => {
             />
           </div>
 
-          {/* Info */}
           <div className="flex flex-col justify-between min-h-[400px]">
             <div>
               <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-foreground leading-[0.9] tracking-tight">
@@ -72,7 +71,6 @@ const ArtistDetail = () => {
         </div>
       </section>
 
-      {/* Works */}
       <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
         <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Selected Works</span>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12">

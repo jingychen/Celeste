@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import KeepInTouchSection from "@/components/KeepInTouchSection";
-import { exhibitions } from "@/data/exhibitions";
+import { useExhibitions } from "@/hooks/useExhibitions";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const { exhibitions } = useExhibitions();
   const latest = exhibitions[0];
+
+  if (!latest) return null;
 
   return (
     <div className="min-h-screen bg-background">
