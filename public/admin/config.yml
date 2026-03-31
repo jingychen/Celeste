@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: jingychen/Celeste
   branch: feature/decap-cms
+  base_url: https://celeste-lovat.vercel.app
+  auth_endpoint: /api/auth
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
