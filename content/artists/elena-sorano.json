@@ -6,8 +6,20 @@
   "portrait": "/images/uploads/artist-2.jpg",
   "bio": "Elena Sorano's sculptural practice interrogates the tension between presence and absence. Working primarily in marble and bronze, she creates forms that seem to emerge from — or dissolve into — the spaces they inhabit.\n\nHer installations transform architectural environments into immersive landscapes of contemplation, inviting viewers to reconsider their relationship with physical space.",
   "works": [
-    { "title": "Void Study III", "year": "2026", "image": "/images/uploads/artist-2.jpg" },
-    { "title": "Emergence", "year": "2025", "image": "/images/uploads/artist-2.jpg" },
-    { "title": "Still Echo", "year": "2024", "image": "/images/uploads/artist-2.jpg" }
+    {
+      "title": "Void Study III",
+      "year": "2026",
+      "image": "/images/uploads/gemini_generated_image_7rcn8r7rcn8r7rcn.png"
+    },
+    {
+      "title": "Emergence",
+      "year": "2025",
+      "image": "/images/uploads/artist-2.jpg"
+    },
+    {
+      "title": "Still Echo",
+      "year": "2024",
+      "image": "/images/uploads/artist-2.jpg"
+    }
   ]
 }
