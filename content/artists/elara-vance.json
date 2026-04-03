@@ -1,0 +1,35 @@
+{
+  "name": "Elara Vance",
+  "slug": "elara-vance",
+  "medium": "Digital Surrealism",
+  "location": "Dubai, UAE",
+  "bio": "Elara Vance is a visionary digital artist whose work sits at the intersection of Neo-Classical architecture and Speculative Futurism. Her signature style involves a dreamlike palette of lavender, cerulean, and silver, often exploring the tension between the permanence of stone and the volatility of digital data. By placing biological motifs—like the horse—within fractured, cosmic landscapes, she challenges the viewer to reconsider the boundaries between natural evolution and technological collapse.",
+  "portrait": "/images/uploads/1fd307d1-6e7c-4245-934d-6a8927eb381f_0_0.png",
+  "works": [
+    {
+      "title": "Echoes",
+      "year": "2026",
+      "image": "/images/uploads/1fd307d1-6e7c-4245-934d-6a8927eb381f_0_0.png"
+    },
+    {
+      "image": "/images/uploads/11ebe023-a7b7-4830-92ea-2b44cd40121d_0_1.png",
+      "title": "After People",
+      "year": "2025"
+    },
+    {
+      "title": "The Wishing Tree of White Nights",
+      "year": "2025",
+      "image": "/images/uploads/8eafd923-253d-4156-b87d-f3b7d7399cc6_0_2.png"
+    },
+    {
+      "image": "/images/uploads/cde8eb23-5a0c-47c8-acc5-f4e13844ff27_0_1.png",
+      "title": "Countdown of the Sunken Citadel",
+      "year": "2024"
+    },
+    {
+      "title": "Silvan",
+      "year": "2024",
+      "image": "/images/uploads/gemini_generated_image_hqr60ahqr60ahqr6.png"
+    }
+  ]
+}
