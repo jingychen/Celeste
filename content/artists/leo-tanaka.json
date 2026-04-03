@@ -3,11 +3,28 @@
   "name": "Leo Tanaka",
   "medium": "Mixed Media & Digital",
   "location": "Tokyo, JP",
-  "portrait": "/images/uploads/artist-3.jpg",
+  "portrait": "/images/uploads/a0e6946e-571c-4709-a363-58e71d10d608_0_0.png",
   "bio": "Leo Tanaka bridges the physical and digital worlds through mixed media works that combine traditional Japanese printmaking techniques with generative algorithms and augmented reality.\n\nHis practice questions the boundaries between organic and synthetic, creating pieces that evolve over time through embedded digital layers accessible via companion applications.",
   "works": [
-    { "title": "Data Garden", "year": "2026", "image": "/images/uploads/artist-3.jpg" },
-    { "title": "Pixel Bloom", "year": "2025", "image": "/images/uploads/artist-3.jpg" },
-    { "title": "Neural Landscape", "year": "2024", "image": "/images/uploads/artist-3.jpg" }
+    {
+      "title": "Data Garden",
+      "year": "2026",
+      "image": "/images/uploads/a0e6946e-571c-4709-a363-58e71d10d608_0_0.png"
+    },
+    {
+      "title": "Pixel Bloom",
+      "year": "2025",
+      "image": "/images/uploads/35a3613d-30c7-45f0-9e60-302dc9d3360e_0_3.png"
+    },
+    {
+      "title": "Neural Landscape",
+      "year": "2024",
+      "image": "/images/uploads/e7e1d847-b458-4bbb-ac7c-da078d4be103_0_0.png"
+    },
+    {
+      "title": "Neural Landscape II",
+      "year": "2024",
+      "image": "/images/uploads/71051dcf-5c80-4775-8365-73579fbd9fd0_0_0.png"
+    }
   ]
 }
