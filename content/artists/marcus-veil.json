@@ -3,11 +3,28 @@
   "name": "Marcus Veil",
   "medium": "Oil on Canvas, Gold Leaf",
   "location": "Berlin, DE",
-  "portrait": "/images/uploads/artist-1.jpg",
+  "portrait": "/images/uploads/fca22b7c-1ef0-4bfd-baf5-f088dabe28f5_0_1.png",
   "bio": "Marcus Veil is a Berlin-based painter whose work explores the intersection of destruction and beauty. Drawing from the Japanese philosophy of kintsugi, Veil creates large-scale canvases where dark surfaces are interrupted by luminous veins of gold.\n\nHis practice involves months of layering oil paint, then deliberately fracturing the surface to reveal golden seams beneath — a meditation on resilience and the beauty of imperfection.",
   "works": [
-    { "title": "Golden Fracture I", "year": "2026", "image": "/images/uploads/artist-1.jpg" },
-    { "title": "Veins of Light", "year": "2025", "image": "/images/uploads/artist-1.jpg" },
-    { "title": "Broken Horizon", "year": "2024", "image": "/images/uploads/artist-1.jpg" }
+    {
+      "title": "Golden Fracture I",
+      "year": "2026",
+      "image": "/images/uploads/fca22b7c-1ef0-4bfd-baf5-f088dabe28f5_0_1.png"
+    },
+    {
+      "title": "Veins of Light",
+      "year": "2025",
+      "image": "/images/uploads/fca22b7c-1ef0-4bfd-baf5-f088dabe28f5_0_2.png"
+    },
+    {
+      "title": "Broken Horizon",
+      "year": "2024",
+      "image": "/images/uploads/2bfe39e9-68a1-41e3-9fd8-59c42fa82949_0_0.png"
+    },
+    {
+      "title": "Broken Horizon II",
+      "year": "2024",
+      "image": "/images/uploads/2bfe39e9-68a1-41e3-9fd8-59c42fa82949_0_3.png"
+    }
   ]
 }
