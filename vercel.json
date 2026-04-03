@@ -1,16 +1,5 @@
 {
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
-  ],
-  "headers": [
-    {
-      "source": "/admin(.*)",
-      "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.github.com https://github.com https://unpkg.com https://raw.githubusercontent.com https://objects.githubusercontent.com https://uploads.github.com; frame-src 'self'; font-src 'self' https://unpkg.com data:;"
-        }
-      ]
-    }
   ]
 }
