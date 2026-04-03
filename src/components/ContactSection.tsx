@@ -14,8 +14,8 @@ const ContactSection = () => {
             <div className="flex items-start gap-4">
               <MapPin size={16} className="text-foreground/20 mt-1 shrink-0" />
               <div>
-                <p className="text-foreground/60 text-sm font-light">123 Gallery Lane, Chelsea</p>
-                <p className="text-foreground/60 text-sm font-light">New York, NY 10011</p>
+                <p className="text-foreground/60 text-sm font-light">195-197 WOOD STR, LONDON</p>
+                <p className="text-foreground/60 text-sm font-light">United Kingdom, E17 3NU</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
