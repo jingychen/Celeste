@@ -34,7 +34,10 @@ const Exhibitions = () => {
                 <h3 className="text-2xl md:text-4xl font-light text-foreground mt-4 mb-3 tracking-tight group-hover:text-gold transition-colors duration-500">
                   {ex.title}
                 </h3>
-                <p className="text-sm text-foreground/40 font-light">{ex.artist}</p>
+                <p className="text-sm text-foreground/40 font-light mb-4">{ex.artist}</p>
+                {ex.description && (
+                  <p className="text-sm text-foreground/50 font-light leading-relaxed line-clamp-4">{ex.description}</p>
+                )}
               </div>
               <div className="flex items-center justify-between mt-6">
                 <p className="text-[12px] text-foreground/30 tracking-[0.1em] uppercase">{ex.date}</p>
@@ -43,12 +46,14 @@ const Exhibitions = () => {
             </div>
 
             <div className={`overflow-hidden mt-6 md:mt-0 ${i % 2 !== 0 ? "md:order-1" : ""}`}>
-              <img
-                src={ex.image}
-                alt={ex.title}
-                loading="lazy"
-                className="w-full h-[300px] md:h-[450px] object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
-              />
+              <div className="relative w-full aspect-[3/4]">
+                <img
+                  src={ex.image}
+                  alt={ex.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
+                />
+              </div>
             </div>
           </Link>
         ))}
