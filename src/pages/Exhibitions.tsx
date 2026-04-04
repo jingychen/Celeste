@@ -22,10 +22,10 @@ const Exhibitions = () => {
           <Link
             to={`/exhibition/${ex.slug}`}
             key={i}
-            className={`group block cursor-pointer border-t border-border py-8 md:py-12 md:grid md:gap-12 items-start ${
+            className={`group block cursor-pointer border-t border-border py-10 md:py-14 md:grid md:gap-16 items-center ${
               i % 2 === 0
-                ? "md:grid-cols-[1fr_1.5fr]"
-                : "md:grid-cols-[1.5fr_1fr]"
+                ? "md:grid-cols-[1fr_344px]"
+                : "md:grid-cols-[344px_1fr]"
             }`}
           >
             <div className={`flex flex-col justify-between h-full ${i % 2 !== 0 ? "md:order-2" : ""}`}>
@@ -39,14 +39,14 @@ const Exhibitions = () => {
                   <p className="text-sm text-foreground/50 font-light leading-relaxed line-clamp-4">{ex.description}</p>
                 )}
               </div>
-              <div className="flex items-center justify-between mt-6">
+              <div className="flex items-center justify-between mt-8">
                 <p className="text-[12px] text-foreground/30 tracking-[0.1em] uppercase">{ex.date}</p>
                 <ArrowUpRight size={18} className="text-foreground/20 group-hover:text-gold transition-colors duration-500" />
               </div>
             </div>
 
-            <div className={`overflow-hidden mt-6 md:mt-0 flex ${i % 2 !== 0 ? "md:order-1 justify-start" : "justify-end"}`}>
-              <div className="relative h-[458px] w-[344px] shrink-0">
+            <div className={`overflow-hidden mt-6 md:mt-0 ${i % 2 !== 0 ? "md:order-1" : ""}`}>
+              <div className="relative h-[458px] w-full">
                 <img
                   src={ex.image}
                   alt={ex.title}
