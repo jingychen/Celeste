@@ -45,12 +45,14 @@ const ExhibitionSection = () => {
 
             {/* Image */}
             <div className={`overflow-hidden mt-6 md:mt-0 ${i === 1 ? "md:order-1" : ""}`}>
-              <img
-                src={ex.image}
-                alt={ex.title}
-                loading="lazy"
-                className="w-full h-[300px] md:h-[450px] object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
-              />
+              <div className="relative w-full aspect-[3/4]">
+                <img
+                  src={ex.image}
+                  alt={ex.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
+                />
+              </div>
             </div>
           </Link>
         ))}
