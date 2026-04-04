@@ -46,12 +46,12 @@ const Exhibitions = () => {
             </div>
 
             <div className={`overflow-hidden mt-6 md:mt-0 ${i % 2 !== 0 ? "md:order-1" : ""}`}>
-              <div className="relative w-full max-w-[112px] md:max-w-[150px] aspect-[3/4]">
+              <div className="relative w-full" style={{height: '458px'}}>
                 <img
                   src={ex.image}
                   alt={ex.title}
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
+                  className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
                 />
               </div>
             </div>

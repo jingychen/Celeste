@@ -45,12 +45,12 @@ const ExhibitionSection = () => {
 
             {/* Image */}
             <div className={`overflow-hidden mt-6 md:mt-0 ${i === 1 ? "md:order-1" : ""}`}>
-              <div className="relative w-full aspect-[3/4]">
+              <div className="relative w-full aspect-[3/4] max-h-[458px]">
                 <img
                   src={ex.image}
                   alt={ex.title}
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
+                  className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
                 />
               </div>
             </div>
