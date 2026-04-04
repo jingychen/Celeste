@@ -17,40 +17,46 @@ const ExhibitionSection = () => {
       </div>
 
       {/* Exhibition List */}
-      <div className="px-6 md:px-12 lg:px-20">
+      <div className="pb-8">
         {exhibitions.map((ex, i) => (
           <Link
             to={`/exhibition/${ex.slug}`}
             key={i}
-            className="group block cursor-pointer border-t border-border py-10 md:py-16 md:flex md:gap-16 items-start"
+            className="group block cursor-pointer border-t border-border"
           >
-            {/* Poster — alternates left/right */}
-            <div className={`shrink-0 overflow-hidden w-full md:w-[344px] mb-6 md:mb-0 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
-              <div className="relative h-[458px]">
-                <img
-                  src={ex.poster || ex.image}
-                  alt={ex.title}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
-                />
-              </div>
-            </div>
+            <div className={`px-6 md:px-12 lg:px-20 py-12 md:py-20 md:flex md:gap-20 items-start ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
 
-            {/* Text */}
-            <div className={`flex flex-col justify-between flex-1 h-[458px] ${i % 2 !== 0 ? "md:order-1" : ""}`}>
-              <div>
-                <span className="text-foreground/20 text-[11px] tracking-[0.2em] font-normal">{ex.number}</span>
-                <h3 className="text-3xl md:text-5xl font-light text-foreground mt-6 mb-4 tracking-tight leading-[1.05] group-hover:text-gold transition-colors duration-500">
-                  {ex.title}
-                </h3>
-                <p className="text-sm text-foreground/40 font-light mb-6 tracking-wide">{ex.artist}</p>
-                {ex.description && (
-                  <p className="text-sm text-foreground/50 font-light leading-loose line-clamp-6 max-w-sm">{ex.description}</p>
-                )}
+              {/* Poster */}
+              <div className="shrink-0 w-full md:w-[38%] overflow-hidden mb-8 md:mb-0">
+                <div className="relative aspect-[3/4]">
+                  <img
+                    src={ex.poster || ex.image}
+                    alt={ex.title}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
+                  />
+                </div>
               </div>
-              <div className="flex items-center justify-between">
-                <p className="text-[12px] text-foreground/30 tracking-[0.15em] uppercase">{ex.date}</p>
-                <ArrowUpRight size={18} className="text-foreground/20 group-hover:text-gold transition-colors duration-500" />
+
+              {/* Text */}
+              <div className="flex flex-col justify-between flex-1 md:py-4">
+                <div>
+                  <span className="text-foreground/20 text-[11px] tracking-[0.3em] uppercase font-normal">{ex.number}</span>
+                  <h3 className="text-4xl md:text-6xl lg:text-7xl font-light text-foreground mt-5 mb-5 tracking-tight leading-[1] group-hover:text-gold transition-colors duration-500">
+                    {ex.title}
+                  </h3>
+                  <p className="text-[13px] text-foreground/40 tracking-[0.15em] uppercase font-normal mb-8">{ex.artist}</p>
+                  {Array.isArray(ex.description) && ex.description[0] && (
+                    <p className="text-sm md:text-base text-foreground/50 font-light leading-loose max-w-md">{ex.description[0]}</p>
+                  )}
+                </div>
+                <div className="flex items-center justify-between mt-12 md:mt-16">
+                  <p className="text-[12px] text-foreground/30 tracking-[0.2em] uppercase">{ex.date}</p>
+                  <div className="flex items-center gap-2 text-foreground/20 group-hover:text-gold transition-colors duration-500">
+                    <span className="text-[11px] tracking-[0.15em] uppercase">View</span>
+                    <ArrowUpRight size={16} />
+                  </div>
+                </div>
               </div>
             </div>
           </Link>
