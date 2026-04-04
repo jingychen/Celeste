@@ -1,16 +1,16 @@
 {
-  "slug": "fragments-of-gold",
-  "number": "01",
-  "title": "Fragments of Gold",
-  "artist": "Marcus Veil",
-  "date": "Jun 12 — Aug 30, 2026",
-  "image": "/images/uploads/exhibition-1.jpg",
-  "poster": "/images/uploads/poster-1.jpg",
-  "location": "Main Hall, Celeste Gallery",
-  "description": "Marcus Veil's latest body of work explores the Japanese philosophy of kintsugi — the art of repairing broken pottery with gold. In 'Fragments of Gold', Veil extends this metaphor to the human experience, presenting large-scale canvases where dark, brooding surfaces are interrupted by veins of luminous gold leaf.\n\nThe exhibition brings together twelve new paintings and a site-specific installation, each piece meditating on themes of imperfection, resilience, and the beauty found in fracture. Veil's process involves building up layers of oil paint over months, then deliberately breaking the surface to reveal golden seams beneath.\n\nThis is Veil's first solo exhibition at Celeste Gallery and represents a significant evolution in his practice — moving from purely abstract compositions toward a more philosophical engagement with material and meaning.",
   "details": {
-    "medium": "Oil on canvas, gold leaf, mixed media",
-    "works": "12 paintings, 1 site-specific installation",
-    "curated": "Elena Marchetti"
-  }
+    "medium": "mixed media",
+    "works": "12 2D Works, 3 site-specific installation",
+    "curated": "Jingyi Chen"
+  },
+  "artist": "Collective Exihibition",
+  "number": "01",
+  "slug": "The-Ghost-in-the-Space",
+  "poster": "/images/uploads/group-7.png",
+  "date": "May 12 — May 22, 2025",
+  "location": "Arch 402, Cremer St, London E2 8HD",
+  "title": "The Ghost in the  Space",
+  "image": "/images/uploads/group-7.png",
+  "description": "This group exhibition explores the \"black box\" of machine learning as a digital subconscious. It questions what happens to human memory when it is compressed into mathematical vectors. Is the output a creation, or a haunting of the original?"
 }
