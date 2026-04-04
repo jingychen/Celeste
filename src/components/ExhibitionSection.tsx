@@ -24,11 +24,11 @@ const ExhibitionSection = () => {
             key={i}
             className="group block cursor-pointer border-t border-border py-10 md:py-16 md:flex md:gap-16 items-start"
           >
-            {/* Image — alternates left/right */}
+            {/* Poster — alternates left/right */}
             <div className={`shrink-0 overflow-hidden w-full md:w-[344px] mb-6 md:mb-0 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
               <div className="relative h-[458px]">
                 <img
-                  src={ex.image}
+                  src={ex.poster || ex.image}
                   alt={ex.title}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
