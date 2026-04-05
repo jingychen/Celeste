@@ -11,7 +11,7 @@ const Exhibitions = () => {
 
       <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-6 md:px-12 lg:px-20">
         <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Upcoming</span>
-        <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
+        <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
           Upcoming<br />
           <span className="italic font-normal text-foreground/60">Exhibitions</span>
         </h1>
