@@ -30,7 +30,7 @@ const ExhibitionSection = () => {
               <div className="shrink-0 w-full md:w-[38%] overflow-hidden mb-8 md:mb-0">
                 <div className="relative aspect-[3/4]">
                   <img
-                    src={ex.poster || ex.image}
+                    src={ex.poster}
                     alt={ex.title}
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"

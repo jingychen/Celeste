@@ -41,9 +41,6 @@ collections:
       - label: Location
         name: location
         widget: string
-      - label: Cover Image
-        name: image
-        widget: image
       - label: Poster Image
         name: poster
         widget: image
@@ -51,6 +48,15 @@ collections:
         name: description
         widget: text
         hint: Separate paragraphs with a blank line
+      - label: Gallery Images
+        name: images
+        widget: list
+        required: false
+        hint: Optional images displayed below the description (3:2 ratio)
+        field:
+          label: Image
+          name: image
+          widget: image
       - label: Details
         name: details
         widget: object

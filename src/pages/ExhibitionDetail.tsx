@@ -111,17 +111,23 @@ const ExhibitionDetail = () => {
         </div>
       </section>
 
-      {/* Exhibition Image — full width */}
-      <section className="px-6 md:px-12 lg:px-20 pb-16 md:pb-24">
-        <div className="overflow-hidden">
-          <img
-            src={exhibition.image}
-            alt={exhibition.title}
-            loading="lazy"
-            className="w-full h-[300px] md:h-[500px] lg:h-[600px] object-cover"
-          />
-        </div>
-      </section>
+      {/* Gallery Images */}
+      {exhibition.images && exhibition.images.length > 0 && (
+        <section className="px-6 md:px-12 lg:px-20 pb-16 md:pb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {exhibition.images.map((img, i) => (
+              <div key={i} className="overflow-hidden">
+                <img
+                  src={img}
+                  alt={`${exhibition.title} — ${i + 1}`}
+                  loading="lazy"
+                  className="w-full aspect-[3/2] object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Prev / Next navigation */}
       <section className="border-t border-border">

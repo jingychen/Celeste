@@ -35,7 +35,7 @@ const Index = () => {
               <div className="shrink-0 w-full md:w-[38%] overflow-hidden mb-8 md:mb-0">
                 <div className="relative aspect-[3/4]">
                   <img
-                    src={latest.poster || latest.image}
+                    src={latest.poster}
                     alt={latest.title}
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
@@ -71,7 +71,7 @@ const Index = () => {
               to="/exhibitions"
               className="inline-flex items-center gap-3 text-foreground/50 text-[13px] tracking-[0.1em] uppercase font-normal border-b border-foreground/20 pb-2 hover:text-gold hover:border-gold transition-colors duration-500"
             >
-              View All Exhibitions <ArrowUpRight size={14} />
+              Upcoming Exhibitions <ArrowUpRight size={14} />
             </Link>
           </div>
         </div>
