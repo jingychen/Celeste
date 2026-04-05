@@ -31,7 +31,7 @@ const HeroSection = () => {
           </h1>
           <div className="mt-8 md:mt-12 flex items-end justify-between">
             <p className="text-foreground/40 text-sm font-light max-w-xs leading-relaxed hidden md:block">
-              A curated space for contemporary voices pushing the boundaries of visual expression.
+            Not just a gallery. A signal from the future.
             </p>
             <p className="text-foreground/30 text-[11px] tracking-[0.2em] uppercase">
               Scroll to explore ↓
