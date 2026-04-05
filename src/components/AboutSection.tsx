@@ -21,7 +21,7 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border">
             <div>
-              <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">50<span className="text-gold">+</span></p>
+              <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">10<span className="text-gold">+</span></p>
               <p className="text-[11px] text-foreground/30 tracking-[0.15em] uppercase mt-3">Exhibitions</p>
             </div>
             <div>
