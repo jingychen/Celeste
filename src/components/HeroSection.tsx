@@ -25,9 +25,9 @@ const HeroSection = () => {
             Celeste Gallery — Est. 2020
           </p>
           <h1 className="text-gradient-hero text-[clamp(2.5rem,8vw,7rem)] font-light leading-[0.95] tracking-tight">
-            Art That
+            Art that
             <br />
-            <span className="italic font-normal">Thinks</span>
+            <span className="italic font-normal">thinks</span>
           </h1>
           <div className="mt-8 md:mt-12 flex items-end justify-between">
             <p className="text-foreground/40 text-sm font-light max-w-xs leading-relaxed hidden md:block">
