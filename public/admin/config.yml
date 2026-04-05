@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: jingychen/Celeste
-  branch: feature/decap-cms
+  branch: main
   base_url: https://celeste-lovat.vercel.app
   auth_endpoint: /api/auth
 
