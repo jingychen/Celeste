@@ -16,7 +16,9 @@ const OpenCall = () => {
               Your <span className="italic font-normal text-foreground/60">Work</span>
             </h1>
             <a
-              href="#"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe39h_eOdg235BtdJwHPsjCDiSSa17WIaeyqkrNRINE2afCqw/viewform?usp=sharing&ouid=106162508350864104566"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 text-foreground/50 text-[13px] tracking-[0.1em] uppercase font-normal border-b border-foreground/20 pb-2 hover:text-gold hover:border-gold transition-colors duration-500"
             >
               Apply Now <ArrowUpRight size={14} />
@@ -30,10 +32,6 @@ const OpenCall = () => {
             <p className="text-foreground/35 text-[15px] font-light leading-[1.8] mt-4">
               All mediums welcome — painting, sculpture, digital, installation, and performance.
             </p>
-            <div className="mt-10 pt-6 border-t border-border">
-              <p className="text-[11px] text-foreground/20 tracking-[0.2em] uppercase">Deadline</p>
-              <p className="text-foreground/60 text-lg font-light mt-1">September 30, 2026</p>
-            </div>
           </div>
         </div>
       </section>
