@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { exhibitions } from "@/data/exhibitions";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
 const ExhibitionDetail = () => {
@@ -110,6 +110,66 @@ const ExhibitionDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* Virtual Exhibition */}
+      {exhibition.virtualUrl && (
+        <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-32 mb-10">
+            <div>
+              <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Virtual Exhibition</span>
+            </div>
+            <div>
+              <p className="text-foreground/35 text-[15px] font-light leading-[1.9] mb-6">
+                Step inside the 3D gallery space and explore each work at your own pace.
+              </p>
+              <a
+                href={exhibition.virtualUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-gold text-[13px] tracking-[0.1em] uppercase font-normal border-b border-gold/40 pb-2 hover:text-foreground hover:border-foreground transition-colors duration-500"
+              >
+                Enter Exhibition <ArrowUpRight size={14} />
+              </a>
+            </div>
+          </div>
+          <div className="w-full overflow-hidden border border-border">
+            <iframe
+              title={`${exhibition.title} — Virtual Exhibition`}
+              src={exhibition.virtualUrl}
+              allowFullScreen
+              loading="lazy"
+              className="w-full h-[450px] md:h-[600px] lg:h-[700px] block"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* Participating Artists */}
+      {exhibition.participants && exhibition.participants.length > 0 && (
+        <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-32">
+            <div>
+              <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Participating Artists</span>
+            </div>
+            <div className="divide-y divide-border">
+              {exhibition.participants.map((artist) => (
+                <div key={artist.name} className="py-6 first:pt-0 last:pb-0 md:grid md:grid-cols-[1fr_2fr] md:gap-12">
+                  <p className="text-foreground text-lg md:text-xl font-light tracking-tight mb-3 md:mb-0">
+                    {artist.name}
+                  </p>
+                  <ul className="space-y-2">
+                    {artist.works.map((work) => (
+                      <li key={work} className="text-foreground/50 text-[14px] font-light italic leading-relaxed">
+                        {work}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Gallery Images */}
       {exhibition.images && exhibition.images.length > 0 && (

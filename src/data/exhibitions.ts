@@ -1,3 +1,8 @@
+export interface Participant {
+  name: string;
+  works: string[];
+}
+
 export interface Exhibition {
   slug: string;
   number: string;
@@ -8,6 +13,8 @@ export interface Exhibition {
   images?: string[];
   location: string;
   description: string[];
+  virtualUrl?: string;
+  participants?: Participant[];
   details: {
     medium: string;
     works: string;
@@ -17,7 +24,7 @@ export interface Exhibition {
 
 const modules = import.meta.glob('/content/exhibitions/*.json', { eager: true });
 
-export const exhibitions: Exhibition[] = (Object.values(modules) as Array<{ default: Omit<Exhibition, 'description'> & { description: string; images?: string[] } }>)
+export const exhibitions: Exhibition[] = (Object.values(modules) as Array<{ default: Omit<Exhibition, 'description'> & { description: string; images?: string[]; virtualUrl?: string; participants?: Participant[] } }>)
   .map((m) => ({
     ...m.default,
     description: m.default.description.split('\n\n').filter(Boolean),
