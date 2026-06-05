@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Social */}
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/celestegallerylondon/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground/30 hover:text-gold transition-colors duration-500"

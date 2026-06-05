@@ -37,7 +37,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-6">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/celestegallerylondon/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground/50 hover:text-foreground transition-colors duration-500"
