@@ -13,6 +13,7 @@ export interface Exhibition {
   images?: string[];
   location: string;
   description: string[];
+  status?: 'upcoming' | 'past';
   virtualUrl?: string;
   participants?: Participant[];
   details: {

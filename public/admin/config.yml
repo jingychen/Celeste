@@ -41,6 +41,13 @@ collections:
       - label: Location
         name: location
         widget: string
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - { label: Upcoming, value: upcoming }
+          - { label: Past, value: past }
+        default: upcoming
       - label: Poster Image
         name: poster
         widget: image
