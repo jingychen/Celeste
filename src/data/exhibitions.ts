@@ -15,6 +15,7 @@ export interface Exhibition {
   description: string[];
   status?: 'upcoming' | 'past';
   virtualUrl?: string;
+  catalogueUrl?: string;
   participants?: Participant[];
   details: {
     medium: string;

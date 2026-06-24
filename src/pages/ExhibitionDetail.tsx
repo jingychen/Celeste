@@ -24,12 +24,24 @@ const ExhibitionDetail = () => {
 
       {/* Hero — poster + title side by side */}
       <section className="pt-28 md:pt-36 pb-16 md:pb-24 px-6 md:px-12 lg:px-20">
-        <Link
-          to="/exhibitions"
-          className="inline-flex items-center gap-2 text-foreground/30 text-[12px] tracking-[0.15em] uppercase hover:text-gold transition-colors duration-500 mb-12 md:mb-16"
-        >
-          <ArrowLeft size={14} /> Back to Exhibitions
-        </Link>
+        <div className="flex items-center justify-between mb-12 md:mb-16">
+          <Link
+            to="/exhibitions"
+            className="inline-flex items-center gap-2 text-foreground/30 text-[12px] tracking-[0.15em] uppercase hover:text-gold transition-colors duration-500"
+          >
+            <ArrowLeft size={14} /> Back to Exhibitions
+          </Link>
+          {exhibition.catalogueUrl && (
+            <a
+              href={exhibition.catalogueUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-foreground/40 text-[12px] tracking-[0.15em] uppercase hover:text-gold transition-colors duration-500 border-b border-foreground/20 pb-1 hover:border-gold"
+            >
+              View Catalogue <ArrowUpRight size={13} />
+            </a>
+          )}
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12 lg:gap-20 items-start">
           {/* Poster — portrait, prominent */}

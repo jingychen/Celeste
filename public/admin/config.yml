@@ -64,6 +64,11 @@ collections:
           label: Image
           name: image
           widget: image
+      - label: Catalogue PDF URL
+        name: catalogueUrl
+        widget: string
+        required: false
+        hint: Link to the exhibition catalogue PDF
       - label: Details
         name: details
         widget: object
