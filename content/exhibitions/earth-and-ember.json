@@ -59,13 +59,14 @@
     "curated": "Calista Chen"
   },
   "virtualUrl": "https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=15493473",
+  "catalogueUrl": "https://drive.google.com/file/d/1jKBUO-0Xr564Ng9U3rOxnFJL9oUnsAjp/view?usp=sharing",
   "artist": "Collective Exhibition",
   "number": "01",
   "slug": "Synthesized-Empathy",
   "poster": "/images/uploads/group-21.png",
   "date": "May 20, 2026 — June 20, 2026",
-  "location": "Online",
   "status": "past",
+  "location": "Online",
   "title": "Synthesized Empathy",
   "images": [
     "/images/uploads/121sasa.png",
