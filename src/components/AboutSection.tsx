@@ -12,10 +12,10 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col justify-end">
-          <p className="text-foreground/35 text-[15px] font-light leading-[1.9] mb-6">
+          <p className="text-foreground/55 text-[15px] font-light leading-[1.9] mb-6">
             Founded in 2020, Celeste Gallery stands at the intersection of contemporary art and cultural innovation. We represent a curated roster of artists whose works challenge perception and redefine boundaries.
           </p>
-          <p className="text-foreground/35 text-[15px] font-light leading-[1.9]">
+          <p className="text-foreground/55 text-[15px] font-light leading-[1.9]">
             Our mission is to create a platform where artistic vision meets global audiences — through physical exhibitions, digital experiences, and meaningful collector relationships.
           </p>
 

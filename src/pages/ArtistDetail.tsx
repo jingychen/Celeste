@@ -63,7 +63,7 @@ const ArtistDetail = () => {
 
             <div className="mt-12 pt-8 border-t border-border space-y-6">
               {artist.bio.map((para, i) => (
-                <p key={i} className="text-foreground/35 text-[15px] font-light leading-[1.9]">
+                <p key={i} className="text-foreground/55 text-[15px] font-light leading-[1.9]">
                   {para}
                 </p>
               ))}

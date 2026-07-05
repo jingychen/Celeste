@@ -115,7 +115,7 @@ const ExhibitionDetail = () => {
           </div>
           <div className="space-y-8">
             {exhibition.description.map((para, i) => (
-              <p key={i} className="text-foreground/35 text-[15px] font-light leading-[1.9]">
+              <p key={i} className="text-foreground/55 text-[15px] font-light leading-[1.9]">
                 {para}
               </p>
             ))}
@@ -133,7 +133,7 @@ const ExhibitionDetail = () => {
                 <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Virtual Exhibition</span>
               </div>
               <div>
-                <p className="text-foreground/35 text-[15px] font-light leading-[1.9] mb-6">
+                <p className="text-foreground/55 text-[15px] font-light leading-[1.9] mb-6">
                   Step inside the 3D gallery space and explore each work at your own pace.
                 </p>
                 <a

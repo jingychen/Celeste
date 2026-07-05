@@ -19,10 +19,10 @@ const OpenCallSection = () => {
         </div>
 
         <div className="flex flex-col justify-end">
-          <p className="text-foreground/35 text-[15px] font-light leading-[1.8]">
+          <p className="text-foreground/55 text-[15px] font-light leading-[1.8]">
             We invite emerging and established artists to submit proposals for our upcoming exhibition seasons.
           </p>
-          <p className="text-foreground/35 text-[15px] font-light leading-[1.8] mt-4">
+          <p className="text-foreground/55 text-[15px] font-light leading-[1.8] mt-4">
             All mediums welcome — painting, sculpture, digital, installation, and performance.
           </p>
           <div className="mt-10 pt-6 border-t border-border">

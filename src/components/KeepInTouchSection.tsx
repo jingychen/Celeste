@@ -39,7 +39,7 @@ const KeepInTouchSection = () => {
         </div>
 
         <div>
-          <p className="text-foreground/35 text-[15px] font-light leading-[1.8] mb-8">
+          <p className="text-foreground/55 text-[15px] font-light leading-[1.8] mb-8">
             Exhibition previews, artist spotlights, and exclusive invitations — delivered to your inbox.
           </p>
           <form onSubmit={handleSubmit} className="border-t border-border pt-6">
