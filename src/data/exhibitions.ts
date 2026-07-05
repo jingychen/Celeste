@@ -14,7 +14,9 @@ export interface Exhibition {
   location: string;
   description: string[];
   status?: 'upcoming' | 'past';
-  virtualUrl?: string;
+  featured?: boolean;
+  virtualOpen?: boolean;
+  embedCode?: string;
   catalogueUrl?: string;
   participants?: Participant[];
   details: {
@@ -24,9 +26,14 @@ export interface Exhibition {
   };
 }
 
+export function extractIframeSrc(embedCode: string): string | null {
+  const match = embedCode.match(/src=["']([^"']+)["']/);
+  return match ? match[1] : null;
+}
+
 const modules = import.meta.glob('/content/exhibitions/*.json', { eager: true });
 
-export const exhibitions: Exhibition[] = (Object.values(modules) as Array<{ default: Omit<Exhibition, 'description'> & { description: string; images?: string[]; virtualUrl?: string; participants?: Participant[] } }>)
+export const exhibitions: Exhibition[] = (Object.values(modules) as Array<{ default: Omit<Exhibition, 'description'> & { description: string } }>)
   .map((m) => ({
     ...m.default,
     description: m.default.description.split('\n\n').filter(Boolean),

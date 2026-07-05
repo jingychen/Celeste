@@ -69,6 +69,36 @@ collections:
         widget: string
         required: false
         hint: Link to the exhibition catalogue PDF
+      - label: Featured on Homepage
+        name: featured
+        widget: boolean
+        default: false
+        hint: Show this exhibition's 3D virtual space in the homepage hero section
+      - label: Show Virtual Exhibition
+        name: virtualOpen
+        widget: boolean
+        default: false
+        hint: Display the 3D virtual exhibition on this page and on the homepage (if featured)
+      - label: Virtual Exhibition Embed Code
+        name: embedCode
+        widget: text
+        required: false
+        hint: Paste the full iframe embed code (e.g. from Kunstmatrix). Leave empty to hide.
+      - label: Participating Artists
+        name: participants
+        widget: list
+        required: false
+        fields:
+          - label: Artist Name
+            name: name
+            widget: string
+          - label: Works
+            name: works
+            widget: list
+            field:
+              label: Work Title
+              name: work
+              widget: string
       - label: Details
         name: details
         widget: object
@@ -76,6 +106,20 @@ collections:
           - { label: Medium, name: medium, widget: string }
           - { label: Works, name: works, widget: string }
           - { label: Curated By, name: curated, widget: string }
+
+  - name: settings
+    label: Site Settings
+    files:
+      - label: General Settings
+        name: general
+        file: content/settings.json
+        format: json
+        fields:
+          - label: Apply Now URL
+            name: applyNowUrl
+            widget: string
+            required: false
+            hint: Link for the Apply Now button on the Open Call page
 
   - name: artists
     label: Artists

@@ -58,7 +58,9 @@
     "works": "17",
     "curated": "Calista Chen"
   },
-  "virtualUrl": "https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=15493473",
+  "featured": false,
+  "virtualOpen": false,
+  "embedCode": "<!--begin kunstmatrix--> <iframe allowfullscreen=\"true\" title=\"virtual exhibition\" frameborder=\"0\" scrolling=\"no\" src=\"https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=15493473\" width=\"100%\" height=\"600\"></iframe><!--end kunstmatrix-->",
   "catalogueUrl": "https://drive.google.com/file/d/1jKBUO-0Xr564Ng9U3rOxnFJL9oUnsAjp/view?usp=sharing",
   "artist": "Collective Exhibition",
   "number": "01",

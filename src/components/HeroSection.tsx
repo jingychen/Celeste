@@ -1,54 +1,68 @@
 import Navbar from "@/components/Navbar";
 import { ArrowUpRight } from "lucide-react";
-
-const VIRTUAL_EXHIBITION_URL = "https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=15493473";
+import { Link } from "react-router-dom";
+import { exhibitions, extractIframeSrc } from "@/data/exhibitions";
 
 const HeroSection = () => {
+  const featured = exhibitions.find((ex) => ex.featured && ex.virtualOpen && ex.embedCode);
+  const featuredSrc = featured?.embedCode ? extractIframeSrc(featured.embedCode) : null;
+
   return (
     <>
-      {/* Now Showing — Virtual Exhibition iframe */}
-      <section className="relative w-full bg-background">
-        <Navbar />
+      {/* Virtual Exhibition — shown only if an exhibition is featured + open */}
+      {featured && featuredSrc && (
+        <section className="relative w-full bg-background">
+          <Navbar />
 
-        <div className="pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-16 items-end">
-            <div>
-              <p className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal mb-6">
-                Now Showing — Virtual Exhibition
-              </p>
-              <h1 className="text-gradient-hero text-[clamp(2.5rem,6vw,5.5rem)] font-light leading-[0.95] tracking-tight">
-                Synthesized
-                <br />
-                <span className="italic font-normal">Empathy</span>
-              </h1>
-              <p className="text-foreground/40 text-sm font-light mt-8 max-w-md leading-relaxed">
-                Step inside our 3D virtual gallery and explore the exhibition in your browser.
-              </p>
-              <a
-                href={VIRTUAL_EXHIBITION_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-10 inline-flex items-center gap-3 text-gold text-[13px] tracking-[0.1em] uppercase font-normal border-b border-gold/40 pb-2 hover:text-foreground hover:border-foreground transition-colors duration-500"
-              >
-                Enter Exhibition <ArrowUpRight size={14} />
-              </a>
-            </div>
+          <div className="pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-12 lg:px-20">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-16 items-end">
+              <div>
+                <p className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal mb-6">
+                  Now Showing — Virtual Exhibition
+                </p>
+                <h1 className="text-gradient-hero text-[clamp(2.5rem,6vw,5.5rem)] font-light leading-[0.95] tracking-tight">
+                  {featured.title.split(" ").slice(0, -1).join(" ")}
+                  <br />
+                  <span className="italic font-normal">{featured.title.split(" ").slice(-1)}</span>
+                </h1>
+                <p className="text-foreground/40 text-sm font-light mt-8 max-w-md leading-relaxed">
+                  Step inside our 3D virtual gallery and explore the exhibition in your browser.
+                </p>
+                <div className="mt-10 flex items-center gap-8">
+                  <a
+                    href={featuredSrc}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-gold text-[13px] tracking-[0.1em] uppercase font-normal border-b border-gold/40 pb-2 hover:text-foreground hover:border-foreground transition-colors duration-500"
+                  >
+                    Enter Exhibition <ArrowUpRight size={14} />
+                  </a>
+                  <Link
+                    to={`/exhibition/${featured.slug}`}
+                    className="inline-flex items-center gap-3 text-foreground/40 text-[13px] tracking-[0.1em] uppercase font-normal border-b border-foreground/20 pb-2 hover:text-gold hover:border-gold transition-colors duration-500"
+                  >
+                    View Details <ArrowUpRight size={14} />
+                  </Link>
+                </div>
+              </div>
 
-            <div className="w-full overflow-hidden border border-border">
-              <iframe
-                title="Virtual Exhibition — Synthesized Empathy"
-                src={VIRTUAL_EXHIBITION_URL}
-                allowFullScreen
-                loading="lazy"
-                className="w-full h-[400px] md:h-[500px] lg:h-[600px] block"
-              />
+              <div className="w-full overflow-hidden border border-border">
+                <iframe
+                  title={`${featured.title} — Virtual Exhibition`}
+                  src={featuredSrc}
+                  allowFullScreen
+                  loading="lazy"
+                  className="w-full h-[400px] md:h-[500px] lg:h-[600px] block"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Original brand hero — video background */}
-      <section className="relative h-screen w-full overflow-hidden bg-background border-t border-border">
+      {/* Brand hero — video background, always shown */}
+      <section className={`relative h-screen w-full overflow-hidden bg-background ${featured && featuredSrc ? "border-t border-border" : ""}`}>
+        {!(featured && featuredSrc) && <Navbar />}
         <video
           className="absolute inset-0 w-full h-full object-cover"
           src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260217_030345_246c0224-10a4-422c-b324-070b7c0eceda.mp4"

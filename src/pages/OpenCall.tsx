@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import settings from "../../content/settings.json";
 
 const OpenCall = () => {
   return (
@@ -15,14 +16,16 @@ const OpenCall = () => {
               Submit<br />
               Your <span className="italic font-normal text-foreground/60">Work</span>
             </h1>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScvFJl8EfvoW-Rk4xwyAbGolMb23WYfm3PpKNFsVEOO_fGz8w/viewform?usp=sharing&ouid=106162508350864104566"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 text-foreground/50 text-[13px] tracking-[0.1em] uppercase font-normal border-b border-foreground/20 pb-2 hover:text-gold hover:border-gold transition-colors duration-500"
-            >
-              Apply Now <ArrowUpRight size={14} />
-            </a>
+            {settings.applyNowUrl && (
+              <a
+                href={settings.applyNowUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-foreground/50 text-[13px] tracking-[0.1em] uppercase font-normal border-b border-foreground/20 pb-2 hover:text-gold hover:border-gold transition-colors duration-500"
+              >
+                Apply Now <ArrowUpRight size={14} />
+              </a>
+            )}
           </div>
 
           <div className="flex flex-col justify-end">

@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { exhibitions } from "@/data/exhibitions";
+import { exhibitions, extractIframeSrc } from "@/data/exhibitions";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
@@ -124,37 +124,40 @@ const ExhibitionDetail = () => {
       </section>
 
       {/* Virtual Exhibition */}
-      {exhibition.virtualUrl && (
-        <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-32 mb-10">
-            <div>
-              <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Virtual Exhibition</span>
+      {exhibition.virtualOpen && exhibition.embedCode && (() => {
+        const src = extractIframeSrc(exhibition.embedCode);
+        return src ? (
+          <section className="border-t border-border py-16 md:py-24 px-6 md:px-12 lg:px-20">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-32 mb-10">
+              <div>
+                <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Virtual Exhibition</span>
+              </div>
+              <div>
+                <p className="text-foreground/35 text-[15px] font-light leading-[1.9] mb-6">
+                  Step inside the 3D gallery space and explore each work at your own pace.
+                </p>
+                <a
+                  href={src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-gold text-[13px] tracking-[0.1em] uppercase font-normal border-b border-gold/40 pb-2 hover:text-foreground hover:border-foreground transition-colors duration-500"
+                >
+                  Enter Exhibition <ArrowUpRight size={14} />
+                </a>
+              </div>
             </div>
-            <div>
-              <p className="text-foreground/35 text-[15px] font-light leading-[1.9] mb-6">
-                Step inside the 3D gallery space and explore each work at your own pace.
-              </p>
-              <a
-                href={exhibition.virtualUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-gold text-[13px] tracking-[0.1em] uppercase font-normal border-b border-gold/40 pb-2 hover:text-foreground hover:border-foreground transition-colors duration-500"
-              >
-                Enter Exhibition <ArrowUpRight size={14} />
-              </a>
+            <div className="w-full overflow-hidden border border-border">
+              <iframe
+                title={`${exhibition.title} — Virtual Exhibition`}
+                src={src}
+                allowFullScreen
+                loading="lazy"
+                className="w-full h-[450px] md:h-[600px] lg:h-[700px] block"
+              />
             </div>
-          </div>
-          <div className="w-full overflow-hidden border border-border">
-            <iframe
-              title={`${exhibition.title} — Virtual Exhibition`}
-              src={exhibition.virtualUrl}
-              allowFullScreen
-              loading="lazy"
-              className="w-full h-[450px] md:h-[600px] lg:h-[700px] block"
-            />
-          </div>
-        </section>
-      )}
+          </section>
+        ) : null;
+      })()}
 
       {/* Participating Artists */}
       {exhibition.participants && exhibition.participants.length > 0 && (
