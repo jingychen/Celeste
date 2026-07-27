@@ -12,9 +12,9 @@ const About = () => {
           <div>
             <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">About</span>
             <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
-              A Space<br />
-              for the<br />
-              <span className="italic font-normal text-gradient-gold">Extraordinary</span>
+              A International Platform<br />
+              for<br />
+              <span className="italic font-normal text-gradient-gold">Future Art</span>
             </h1>
           </div>
 
@@ -32,11 +32,11 @@ const About = () => {
                 <p className="text-[11px] text-foreground/30 tracking-[0.15em] uppercase mt-3">Exhibitions</p>
               </div>
               <div>
-                <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">30</p>
+                <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">300</p>
                 <p className="text-[11px] text-foreground/30 tracking-[0.15em] uppercase mt-3">Artists</p>
               </div>
               <div>
-                <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">12</p>
+                <p className="text-4xl md:text-5xl font-light text-foreground editorial-number">22</p>
                 <p className="text-[11px] text-foreground/30 tracking-[0.15em] uppercase mt-3">Countries</p>
               </div>
             </div>
