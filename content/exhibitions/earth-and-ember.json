@@ -68,7 +68,7 @@
   "date": "May 20, 2026 — June 20, 2026",
   "status": "past",
   "location": "Online",
-  "virtualOpen": true,
+  "virtualOpen": false,
   "title": "Synthesized Empathy",
   "images": [
     "/images/uploads/121sasa.png",
