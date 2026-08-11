@@ -1,16 +1,99 @@
 {
+  "participants": [
+    {
+      "name": "Kuo Wu",
+      "works": [
+        "The Frame"
+      ]
+    },
+    {
+      "name": "Erin Wiley McLaughlin",
+      "works": [
+        "Untitled"
+      ]
+    },
+    {
+      "name": "Thomas Lisle",
+      "works": [
+        "The Secret Workings of the Universe"
+      ]
+    },
+    {
+      "name": "Angel Couldrey",
+      "works": [
+        "In the Wind"
+      ]
+    },
+    {
+      "name": "A. Rosemary Watson",
+      "works": [
+        "Currently Untitled"
+      ]
+    },
+    {
+      "name": "Joyce Aranuwa",
+      "works": [
+        "The Mind's Canopy"
+      ]
+    },
+    {
+      "name": "Veronika Russakova",
+      "works": [
+        "Residual Self"
+      ]
+    },
+    {
+      "name": "Xiye Lyu",
+      "works": [
+        "Mourning Tamagotchi"
+      ]
+    },
+    {
+      "name": "Huilin Li",
+      "works": [
+        "The Patron Saint of ADHD Creativity"
+      ]
+    },
+    {
+      "name": "Shelley Lafferty",
+      "works": [
+        "Space Within"
+      ]
+    },
+    {
+      "name": "GARY DUEHR",
+      "works": [
+        "Ghost in the Shell"
+      ]
+    },
+    {
+      "name": "Sean Bw Parker",
+      "works": [
+        "Queen Victoria Denudes Brighton Pavilion Of Its Furniture  "
+      ]
+    },
+    {
+      "name": "Evangeline",
+      "works": [
+        "My Bones Have 206 Bones..."
+      ]
+    }
+  ],
   "details": {
     "medium": "mixed media",
-    "works": "12 2D Works, 3 site-specific installation",
+    "works": "19",
     "curated": "Calista Chen"
   },
+  "embedCode": "<!--begin kunstmatrix--> <iframe allowfullscreen=\"true\" title=\"virtual exhibition\" frameborder=\"0\" scrolling=\"no\" src=\"https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=15788827\" width=\"100%\" height=\"600\"></iframe><!--end kunstmatrix-->",
   "artist": "Collective Exihibition",
   "number": "02",
   "slug": "The-Ghost-in-the-Space",
-  "poster": "/images/uploads/group-7-2-.png",
+  "poster": "/images/uploads/group-31.png",
+  "featured": true,
   "date": "Aug 12 — Sep 12, 2026",
-  "location": "Online",
   "status": "upcoming",
+  "location": "Online",
+  "virtualOpen": true,
   "title": "The Ghost in the  Space",
   "images": [],
   "description": "The Ghost in the Space explores the invisible residues that linger in physical and digital spaces long after we have gone. It questions what remains of a person when their voice is reconstructed by an algorithm, their data outlives their body, or their memory is embedded in architecture. Is what lingers a presence, or merely an echo of one?"
