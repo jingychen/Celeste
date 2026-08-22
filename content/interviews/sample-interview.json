@@ -1,40 +1,116 @@
 {
-  "slug": "sample-interview",
-  "title": "On Light, Absence, and the Space Between",
-  "artist": "Sample Artist",
+  "slug": "Luciano Caggianello-interview",
+  "title": "From Industrial Aesthetics to Visual Resistance in the Digital Era",
+  "artist": "Luciano Caggianello",
   "date": "August 2026",
-  "thumbnail": "/images/uploads/group-21.png",
+  "thumbnail": "/images/uploads/luciano-caggianello_2018_lies_£y€-_digital.jpg",
   "artistPhoto": "",
-  "bio": "Sample Artist is a multidisciplinary practitioner whose work traverses painting, installation, and digital media. Based between London and Tokyo, their practice investigates the phenomenology of attention — how the eye lingers, hesitates, and ultimately fails to grasp.",
+  "bio": "Luciano Caggianello born in Siena, Italy, is an artist and designer who began his activity\ninteracting with different professional fields: Advertising, Illustration, Graphics and Design\n(industrial and car-design). At the same time he embarked on a path of artistic research\nwhich led him to evolve various representative and visual themes, allowing him to also\nvalidate an articulated national and international exhibition itinerary.\n\nHe is also accompanied, in this path, by the publication of some books (“Intermediario\nImmateriale” 2003, “Parole altrove” 2014, “Aporia e Metamorfosi dell’Arte” 2019,\n“Fenomenologia del Quotidiano 2020, “Pubblicità .jPig” 2021)which serve as an aid to\nreflection and deepening of one's conceptual and philosophical research.\n\nIn recent years, his recognition has essentially become a work of prevalent perceptual and\nconceptual synthesis that re-elaborates all the didactic, cultural and intellectual interactions\nalso coming from his various training fields (from Applied Industrial Physics, to Architecture,\nto the Visual). Furthermore, this approach, by identifying the artistic objective of a thematic-\nconceptual planning and an experimentation inserted between concrete \"poverty\" and\ndigital art, turns out to be much more related and relevant to concepts of presentation than\nof representation. He lives and works in Turin, Italy.",
   "content": [
     {
       "type": "question",
-      "text": "Your recent work seems preoccupied with what is absent from the frame rather than what is present. Is that a conscious decision?"
+      "text": "You have a rich and diverse background spanning advertising, graphic illustration, industrial design, and automotive design. How have these practical mindsets centered on structure, function, and industrial aesthetics helped you construct a visual language in the digital art era that balances rational logic with futuristic sensibilities?"
     },
     {
       "type": "answer",
-      "text": "It becomes conscious only in retrospect. While I am working, I am following a kind of pressure — a sense that something in the composition is pulling toward an edge, wanting to leave. I follow that pressure. The empty space is never planned; it arrives."
+      "text": "Experience, whatever it may be, undoubtedly transforms into an emotional, and therefore cognitive, conformation, to the point of inescapably shaping a subject. In my specific case, a stratification of different skills has materialized, becoming osmotic opportunities in the unfolding of artistic potential. Indeed, creativity has been contaminated by the various expressive possibilities, influencing various methodologies and resulting in a new and unexpected interactivity.\n\nHowever, constructing a complex visual language is sometimes difficult because the past becomes irrevocable, the future appears uncertain, and the present never satisfies. In any case, the effort I have put into filling these existential pages represents my contribution to all those life stories that orbit in similar contexts, virtually representing everyone's story because objective reality reveals itself as an individual experience of the world, which is translated onto a symbolic level and consequently transformed into an objective parameter. Therefore, a certain reality is not the object in itself but rather the experience we have of that object or that experience and contributes to supporting the future of a sensibility.\n"
     },
     {
       "type": "question",
-      "text": "There is a quality of restraint in the work — almost an ethical restraint. Where does that come from?"
+      "text": "You have proposed that artistic creation should lean towards \"Presentation\" rather than traditional \"Representation\". In today's landscape, where digital art and virtual generative technologies have become mainstream, what exactly does art \"present\" in the space between reality and the virtual realm?"
     },
     {
       "type": "answer",
-      "text": "I think it comes from distrust of spectacle. I grew up in an environment saturated with images that demanded emotional responses they had not earned. I became suspicious of that demand. The work I make now tries to earn its moment very slowly, if at all."
+      "text": "I actually proposed the concept of presentation rather than representation because I believe true aesthetics can be assimilated to this principle. Art acquires aesthetic validity through its intrinsic nature and its innate conceptual significance. When it becomes excessively realistic, craving referentiality, bulimic with a pressing and conforming everyday reality, it transforms into trompe l'oeil. Therefore, if it claims to certify that parameter of meticulous resemblance, it loses its defining fascination and downgrades its potential and bewitching narrative.\nHowever, now that the support of artificial intelligence is disrupting certain parameters and becoming more widely used, the image is carving out a new objective for itself: it is destined to be an accomplice to reality but without being its spokesperson. Paradoxically, the image reflects reality without belonging to it, without permeating it, so much so that it disappears beneath the avalanche of signs, allusions, and illusions. Ultimately, the image is the negation of reality. Translating an object into an image means stripping it of its connotations: size, weight, relief, depth, color, olfactory intensity, and perhaps even meaning. The goal of art is increasingly becoming the production of images (which also includes videos, reels, snapshots, etc.) rather than meanings. Cultural subtraction also produces intellectual impoverishment, so much so that an image is now more important than what it represents, and its language predominates over its intended meaning.\nThe image, therefore, never fully conveys the meaning of its representation, nor does it seek to be a destination, but merely to channel a structure of the possible, without necessarily providing an explicit reflection of its intrinsic meaning; a sort of parallel path to the definition of its existence, which becomes merely a complementary element of the visual and offers neither a caption nor an interpretation of the work, but merely a parallel, a surrogate, devoid of any referential quality, especially conceptual.\n"
+    },
+    {
+      "type": "question",
+      "text": "In many of your digital works, typography, currency symbols, and code-like repetitive layouts play a central role. For you, how are these everyday symbols transformed through digital restructuring into an artistic language infused with social critique？"
+    },
+    {
+      "type": "answer",
+      "text": "Art is a relational process, a supplying cultural osmosis, eager to contribute to the transfer of social symbols and parameters, beyond the purely \"economic\" ones, which all individuals need (or would need) to acquire or exchange. The codes themselves represent the boundaries through which existence can be navigated, achieving a human, cultural, and intellectual dimension.\nDigital restructuring strips these symbols of their apparent neutrality, transforming them into tools of visual resistance capable of highlighting the contradictions, consumerist tendencies, and control dynamics of contemporary society, endowing them with the possibility of a necessary social critique."
     },
     {
       "type": "image",
-      "src": "/images/uploads/121sasa.png",
-      "caption": "Installation view, Celeste Gallery, 2026"
+      "src": "/images/uploads/luciano-caggianello_2018_lies_£y€-_digital.jpg",
+      "caption": "Luciano Caggianello_2018_LIES_£Y€$_digital"
     },
     {
       "type": "question",
-      "text": "How do you know when a work is finished?"
+      "text": "Your creative practice moves between concrete \"poverty materials\" (such as iron wire and barbed wire) and intangible digital art. In an era driven by futuristic trends toward pure virtuality and high technology, what special significance does this convergence of physical medium and digital material hold for you？"
     },
     {
       "type": "answer",
-      "text": "When I stop being able to improve it and start only being able to change it. That is a different feeling entirely — from refinement to revision. Once I cross that threshold I leave the studio."
+      "text": "This convergence between physical materials and the analog-virtual world demonstrates that contemporary art does not necessarily choose between past and future, but rather seeks a critical synthesis. Using the hardness of simple matter with the lightness of digital code allows us to narrate the contradictions of our time, an era suspended between a deep-rooted need for tangibility and the unstoppable drive toward the virtual, almost \"dematerialized.\"\nHowever, the artistic objective is always evident, which seeks to position itself beyond true and false, above beautiful and ugly, and thus exclude the question of veracity. Art is realized in its own preference, in its referential adherence to the message it intends to convey. Ultimately, art is not meant to understand or learn; it must inspire hope, dream, indicate a promise and a desire for inner gratification. Art is not absolute truth, otherwise it would be a visual and creative dictatorship. It is perhaps an absolute truth, the expression of an understanding and an indicative simulation. Art should not be everyday life in its representation, but rather a pseudo-simulator that, through a metaphor, does not intend to replicate a model but rather to produce and catalyze an interpretation, consecrate an interior profile, and indicate both an ethical and an aesthetic reference.\nUltimately, upon reflection, beauty and aesthetics are also \"virtual\" models of development that change over time and become osmotic or at least interconnected with their surroundings. Aesthetics is an invention, yet a necessary one, that camouflages a human need that, in its paradoxical vision, serves to impart support and apparent concreteness to its promise of happiness and well-being, while not guaranteeing their precise and absolute fulfillment.\n"
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/luciano-caggianello_2016_his-majesty-consumerism_installation.jpg",
+      "caption": "Luciano Caggianello_2016_His Majesty Consumerism_installation"
+    },
+    {
+      "type": "question",
+      "text": "In your work Ego-metric variations (2024), you constructed a precise geometric totem—reminiscent of an algorithm or a mandala—using endlessly overlapping repetitions of the word \"EGO.\" In a digital future where algorithmic recommendations and social media infinitely magnify the self, what reflections on the human \"EGO\" do you hope to convey through this intensely rational, generative visual aesthetic？"
+    },
+    {
+      "type": "answer",
+      "text": "Art manifests itself (unfortunately or fortunately, depending on your point of view) not as a communal phenomenon but as an artifice of the individual, as the sole individualistic proximity, almost a promotional liturgy of the ego that, if it were not pervaded by an extreme and innate protagonism, could almost be defined as salvific. Unfortunately, given the widespread narcissism and the related desire to appear that afflicts every human being, I suggested making it a \"critical manifesto\" that would declare its vision and reveal its conformation.\nOf course, hoping that similar operations would become coercive elements of dissuasion or even guidelines to be followed would be quite naive and unprepared, but the intent of art is also to identify both the evident social imbalances and to propose a reflection on them.\n"
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/luciano-caggianello_2024_ego-metric-variations_digital.jpg",
+      "caption": "Luciano Caggianello_2024_Ego-metric variations_digital"
+    },
+    {
+      "type": "question",
+      "text": "Your work frequently explores the concept of camouflage and concealment. In a future society defined by biometrics, big data, and ubiquitous surveillance, how do you think art should respond to the tension between individual privacy and technological control？"
+    },
+    {
+      "type": "answer",
+      "text": "Mimesis is a sort of incipit based on relevance, and more generally, precisely because nothing comes from nothing, mimesis serves as a reminder and reference, an element of decoding. Therefore, it is this element of decoding that certain itineraries seek to adhere to. Indeed, the meaning of this \"interpretative\" practice finds its application in time, and since the temporal aspect is a historical moment that contains our things, our emotions, our environments, it thus becomes the monopoly of temporal appearance, past and future, through the cyclical nature of so many daily fragments.\nArt, however, has the fundamental role of making the invisible visible, transforming abstract data and digital surveillance into sensitive experiences. Therefore, it should respond to this tension, revealing its hidden mechanisms, creating spaces of resistance, provoking empathy, but above all preserving human unpredictability, because it would appear as an element of immunity against the perfect predictive efficiency of algorithms.\n"
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/luciano-caggianello_2014_camaouflage_digital.jpg",
+      "caption": "Luciano Caggianello_2014_CaMAOuflage_digital"
+    },
+    {
+      "type": "question",
+      "text": "Your body of work demonstrates a powerful sense of visual and thematic continuity. Is there a covert system or underlying framework that links these works together? What is the core intellectual logic that runs throughout your entire practice？"
+    },
+    {
+      "type": "answer",
+      "text": "My creativity and my artistic process are influenced by everyday life as well as other intellectual cues such as Philosophy or even History. I believe that the research I carry out can be defined as \"metallurgy of thought\". This metaphysics of thought leads to the elaboration of synthesis concepts, intellectual experimentations, verbal innovations, visual alternatives, to then reach, after this inner wandering, the awareness of a precise meaning. In fact man, even if delivered to a limitless experimentation on himself, always accesses the inevitability of a concrete behavioral reality and must therefore provide an interpretative key.\nEven if my approach is based on creative methodologies, I don't establish a precise and strategic work routine, especially behavioral or habitual. My mind has become accustomed to receiving stimuli in the most disparate contexts, my ideal environment is the one close to perimeters of metamorphosis, stories, alternative visions, even errors as well as a concrete existential phenomenology. My inner background is not predominantly exhibited except in the expressive and contextual will of the concept. Obviously, after having grasped my intuitions, I elaborate and rehabilitate them in the studio, adapting them to a precise medium, in order to be able to direct them towards their definitive argument. Being able to use digital technology, sculpture, installation or painting, I therefore interpret the work thinking of the support that is able to synthesize, interpret and enhance it better than others.\nFurthermore, since I have discovered that in life those who are unable to convince desperately try to amaze, my approach aligns itself with the issue of persuasion in the most polite way possible without the need to shout, trying to propose my beliefs (which are not certainties, and I to clarify it…..) in a perspective that aims at a complete sense.\n"
+    },
+    {
+      "type": "question",
+      "text": "As early as 2003, you published Intermediario Immateriale (\"Immaterial Intermediary\"). Against the backdrop of generative AI and Web3 technologies profoundly revolutionizing creative paradigms today, how do you feel the essence of \"art as an immaterial intermediary\" has transformed？"
+    },
+    {
+      "type": "answer",
+      "text": "Over time, art no longer necessarily coincides with physical matter and has therefore undergone a sort of dematerialization, especially through the emergence of performances. It has transformed from a physical object to a relational, yet still not overly conceptual, flow, because the reflective essence of a message is of little interest (or at least suffers from a very marginal, almost atrophic, interest), as it is considered (unfortunately...) exiguous, unadorned, and bare.\nIn the context of an art whose essence has transformed as an immaterial intermediary, temporal occurrences are noted, leaving only memory or documentation as a trace, and the distinction between real and virtual should fade into new immersive dimensions. The immaterial allows for simultaneous and collective enjoyment regardless of physical presence, and therefore art should become a generator of social bonds and contexts for dialogue. Art should become a carrier of purely immaterial meaning: a bridge between the artist's intention, technology as an invisible infrastructure, and the recipient's consciousness. However, I use the conditional because this co-creation and relationship is not active, has not been activated, and I believe the responsibility lies with the phenomenon I personally call the \"democratization of art.\" Indeed, the acceptance of social media has allowed the uncontrolled invasion of supposed creatives without, at the same time, establishing an adequate filter capable not so much of curbing the phenomenon as of selecting.\nIn this context, performance has not improved, and it has not been possible to define the scope of professional adaptation, as anyone with access to a social media platform could have called themselves an artist. However, if owning a microscope does not make one a scientist, or being able to turn on a faucet does not make one a plumber, or owning a book does not make one an intellectual, then an account belonging to a supposed artist does not indicate or evaluate professionalism. Certain paths are not equal; they require effort, commitment, talent, preparation, depth, and culture, so much so that we can say that dedication is not democratic, precisely because not everyone is able to make it a path of virtue.\n"
+    },
+    {
+      "type": "question",
+      "text": "As the boundaries between art and technology become increasingly blurred, future artistic practice demands multifaceted capabilities. Drawing on your own journey of bridging technology, design, and fine art, what do you believe is the single most essential capability for the next generation of tech-art creators？"
+    },
+    {
+      "type": "answer",
+      "text": "One might think that data logic and the ability to master the hardware and software of new and advanced intelligent systems might be the best skills for creating future art, and perhaps this might even be true to a minimal extent, but I believe other qualities are necessary.\nStratification and a foundation in experience determine the long-term perspective of the identity of historical thought, even if for some this is an \"avant-garde\" trick. It is an artifice that outlines the plot of the news, eagerly addressing a temporal horizon of critical identity, but avoiding the assembly and disassembly of a meticulous system of negligible details. The history of the world and its evolution are also the history of its words, the primary source of knowledge. Those words imply dynamics, exchange, vitality, contamination, and all-encompassingness. Not normatively fixing, closing, or discriminating, but reasoning with an appropriate critical spirit, tracing a path that synthesizes and clarifies an event, elucidating its implications between the past and a possible future.\nAnd there are no cutting-edge recipes, nor talented analytical clarity, that can immunize an unwelcome contamination, probably weighed down by intelligent dissemination. Observation is the testimony, it is the first trace. The rest is nothing.\n"
+    },
+    {
+      "type": "question",
+      "text": " Looking ahead 10 to 20 years into the future, as virtual spaces, digital belief systems, and physical reality become deeply integrated, what kind of existence do you envision art ultimately taking?"
+    },
+    {
+      "type": "answer",
+      "text": "Life, like art, represents a collection of consequences, where surface and depth, speed and reflection, communication and expression methodically dismantle every mental exploration. Life is also represented by the bonds we struggle to break, by the roots we refuse to sever, by the words we never want to stop speaking. Existence also includes the gestures that will prevent us from returning, and what will be saved will not be what we have protected but rather what we have been able to transform.\nLife is a promise deep within our hearts, kneaded with our flesh, always precarious between opposing and conflicting extremists. Life and art speak to us of life and its duration. The materializations of our gaze on the body are timed. Both the turning point and the strengthening of this interest are invigorating, as is the importance of memory in the desire to trace one's own history, a history treated not as a mere or unique archaeological question but as the evolution of sedimented knowledge."
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/luciano-caggianello_2022_anniversary-for-the-permanent-day-of-idiocy_digitale.jpg",
+      "caption": "Luciano Caggianello_2022_ANNIVERSARY for the permanent day of idiocy_digitale"
     }
   ]
 }
