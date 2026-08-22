@@ -11,6 +11,8 @@ import ArtistDetail from "./pages/ArtistDetail.tsx";
 import OpenCall from "./pages/OpenCall.tsx";
 import Awards from "./pages/Awards.tsx";
 import About from "./pages/About.tsx";
+import Interviews from "./pages/Interviews.tsx";
+import InterviewDetail from "./pages/InterviewDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/open-call" element={<OpenCall />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/about" element={<About />} />
+          <Route path="/interviews" element={<Interviews />} />
+          <Route path="/interview/:slug" element={<InterviewDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

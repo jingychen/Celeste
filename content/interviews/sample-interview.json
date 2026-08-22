@@ -1,0 +1,40 @@
+{
+  "slug": "sample-interview",
+  "title": "On Light, Absence, and the Space Between",
+  "artist": "Sample Artist",
+  "date": "August 2026",
+  "thumbnail": "/images/uploads/group-21.png",
+  "artistPhoto": "",
+  "bio": "Sample Artist is a multidisciplinary practitioner whose work traverses painting, installation, and digital media. Based between London and Tokyo, their practice investigates the phenomenology of attention — how the eye lingers, hesitates, and ultimately fails to grasp.",
+  "content": [
+    {
+      "type": "question",
+      "text": "Your recent work seems preoccupied with what is absent from the frame rather than what is present. Is that a conscious decision?"
+    },
+    {
+      "type": "answer",
+      "text": "It becomes conscious only in retrospect. While I am working, I am following a kind of pressure — a sense that something in the composition is pulling toward an edge, wanting to leave. I follow that pressure. The empty space is never planned; it arrives."
+    },
+    {
+      "type": "question",
+      "text": "There is a quality of restraint in the work — almost an ethical restraint. Where does that come from?"
+    },
+    {
+      "type": "answer",
+      "text": "I think it comes from distrust of spectacle. I grew up in an environment saturated with images that demanded emotional responses they had not earned. I became suspicious of that demand. The work I make now tries to earn its moment very slowly, if at all."
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/121sasa.png",
+      "caption": "Installation view, Celeste Gallery, 2026"
+    },
+    {
+      "type": "question",
+      "text": "How do you know when a work is finished?"
+    },
+    {
+      "type": "answer",
+      "text": "When I stop being able to improve it and start only being able to change it. That is a different feeling entirely — from refinement to revision. Once I cross that threshold I leave the studio."
+    }
+  ]
+}

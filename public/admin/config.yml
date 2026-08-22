@@ -160,3 +160,78 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Year, name: year, widget: string }
           - { label: Image, name: image, widget: image }
+
+  - name: interviews
+    label: Interviews
+    label_singular: Interview
+    folder: content/interviews
+    create: true
+    delete: true
+    format: json
+    extension: json
+    identifier_field: slug
+    summary: "{{artist}} — {{title}}"
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: URL-friendly identifier (e.g. maya-chen-on-light)
+      - label: Title
+        name: title
+        widget: string
+      - label: Artist
+        name: artist
+        widget: string
+      - label: Date
+        name: date
+        widget: string
+        hint: e.g. August 2026
+      - label: Thumbnail
+        name: thumbnail
+        widget: image
+        hint: Card image shown on the Interviews listing page
+      - label: Artist Photo
+        name: artistPhoto
+        widget: image
+        required: false
+        hint: Optional portrait shown at the top of the interview page
+      - label: Artist Bio
+        name: bio
+        widget: text
+        required: false
+        hint: A short biography shown at the bottom of the interview page
+      - label: Content
+        name: content
+        widget: list
+        hint: Build the interview by adding Question, Answer, or Image blocks
+        types:
+          - label: Question
+            name: question
+            widget: object
+            summary: "Q: {{fields.text}}"
+            fields:
+              - label: Question Text
+                name: text
+                widget: string
+                hint: This will appear bold in the interview
+          - label: Answer
+            name: answer
+            widget: object
+            summary: "A: {{fields.text}}"
+            fields:
+              - label: Answer Text
+                name: text
+                widget: text
+          - label: Artwork Image
+            name: image
+            widget: object
+            summary: "[Image] {{fields.caption}}"
+            fields:
+              - label: Image
+                name: src
+                widget: image
+              - label: Caption
+                name: caption
+                widget: string
+                required: false
+                hint: Optional caption shown below the image
