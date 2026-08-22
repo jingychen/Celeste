@@ -119,7 +119,27 @@ collections:
             name: applyNowUrl
             widget: string
             required: false
-            hint: Link for the Apply Now button on the Open Call page
+            hint: Link for the Apply Now button on the Open Call page and homepage
+          - label: Show Open Call on Homepage
+            name: openCallEnabled
+            widget: boolean
+            default: false
+            hint: Toggle the Open Call section on the homepage. Turn off when there is no active open call.
+          - label: Open Call Poster
+            name: openCallPoster
+            widget: image
+            required: false
+            hint: Optional poster image displayed alongside the Open Call section on the homepage
+          - label: Open Call Deadline
+            name: openCallDeadline
+            widget: string
+            required: false
+            hint: Deadline shown on the homepage (e.g. September 30, 2026). Leave blank to hide.
+          - label: Interview Application URL
+            name: interviewApplyUrl
+            widget: string
+            required: false
+            hint: Google Form link for artists to apply for an interview. Leave blank to hide the section.
 
   - name: artists
     label: Artists

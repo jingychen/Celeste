@@ -1,3 +1,7 @@
 {
-  "applyNowUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvFJl8EfvoW-Rk4xwyAbGolMb23WYfm3PpKNFsVEOO_fGz8w/viewform?usp=sharing&ouid=106162508350864104566"
+  "applyNowUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvFJl8EfvoW-Rk4xwyAbGolMb23WYfm3PpKNFsVEOO_fGz8w/viewform?usp=sharing&ouid=106162508350864104566",
+  "openCallEnabled": true,
+  "openCallPoster": "",
+  "openCallDeadline": "",
+  "interviewApplyUrl": ""
 }
