@@ -28,17 +28,17 @@ const ExhibitionList = ({ list, offset = 0 }: { list: Exhibition[]; offset?: num
           </div>
           <div className="flex flex-col justify-between flex-1 md:py-4">
             <div>
-              <span className="text-foreground/20 text-[11px] tracking-[0.3em] uppercase font-normal">{ex.number}</span>
+              <span className="text-foreground/35 text-[11px] tracking-[0.3em] uppercase font-normal">{ex.number}</span>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-foreground mt-5 mb-5 tracking-tight leading-[1] group-hover:text-gold transition-colors duration-500">
                 {ex.title}
               </h2>
-              <p className="text-[13px] text-foreground/40 tracking-[0.15em] uppercase font-normal mb-8">{ex.artist}</p>
+              <p className="text-[13px] text-foreground/60 tracking-[0.15em] uppercase font-normal mb-8">{ex.artist}</p>
               {Array.isArray(ex.description) && ex.description[0] && (
-                <p className="text-sm md:text-base text-foreground/50 font-light leading-loose max-w-md">{ex.description[0]}</p>
+                <p className="text-sm md:text-base font-normal leading-loose max-w-md" style={{ color: '#D4D4D4' }}>{ex.description[0]}</p>
               )}
             </div>
             <div className="flex items-center justify-between mt-12 md:mt-16">
-              <p className="text-[12px] text-foreground/30 tracking-[0.2em] uppercase">{ex.date}</p>
+              <p className="text-[12px] text-foreground/50 tracking-[0.2em] uppercase">{ex.date}</p>
               <div className="flex items-center gap-2 text-foreground/20 group-hover:text-gold transition-colors duration-500">
                 <span className="text-[11px] tracking-[0.15em] uppercase">View</span>
                 <ArrowUpRight size={16} />
@@ -80,7 +80,7 @@ const Exhibitions = () => {
       {past.length > 0 && (
         <>
           <section className="pb-12 md:pb-20 px-6 md:px-12 lg:px-20 border-t border-border pt-20 md:pt-32">
-            <span className="text-foreground/30 text-[11px] tracking-[0.3em] uppercase font-normal">Archive</span>
+            <span className="text-foreground/45 text-[11px] tracking-[0.3em] uppercase font-normal">Archive</span>
             <h2 className="text-5xl md:text-7xl lg:text-[6rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
               Past<br />
               <span className="italic font-normal text-foreground/60">Exhibitions</span>

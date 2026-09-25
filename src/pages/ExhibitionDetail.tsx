@@ -62,7 +62,7 @@ const ExhibitionDetail = () => {
           {/* Title & Meta — right side */}
           <div className="flex flex-col justify-between min-h-[400px] lg:min-h-[560px]">
             <div>
-              <span className="text-foreground/15 text-[11px] tracking-[0.2em] font-normal editorial-number">
+              <span className="text-foreground/30 text-[11px] tracking-[0.2em] font-normal editorial-number">
                 {exhibition.number}
               </span>
               <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-foreground leading-[0.9] tracking-tight mt-4">
@@ -75,32 +75,32 @@ const ExhibitionDetail = () => {
 
               <div className="mt-10 space-y-4">
                 <div className="flex items-baseline gap-8">
-                  <span className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase w-20 shrink-0">Artist</span>
-                  <span className="text-foreground/60 text-sm font-light">{exhibition.artist}</span>
+                  <span className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase w-20 shrink-0">Artist</span>
+                  <span className="text-[15px] font-normal" style={{ color: '#D4D4D4' }}>{exhibition.artist}</span>
                 </div>
                 <div className="flex items-baseline gap-8">
-                  <span className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase w-20 shrink-0">Date</span>
-                  <span className="text-foreground/60 text-sm font-light">{exhibition.date}</span>
+                  <span className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase w-20 shrink-0">Date</span>
+                  <span className="text-[15px] font-normal" style={{ color: '#D4D4D4' }}>{exhibition.date}</span>
                 </div>
                 <div className="flex items-baseline gap-8">
-                  <span className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase w-20 shrink-0">Location</span>
-                  <span className="text-foreground/60 text-sm font-light">{exhibition.location}</span>
+                  <span className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase w-20 shrink-0">Location</span>
+                  <span className="text-[15px] font-normal" style={{ color: '#D4D4D4' }}>{exhibition.location}</span>
                 </div>
               </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-border grid grid-cols-3 gap-6">
               <div>
-                <p className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase mb-2">Medium</p>
-                <p className="text-foreground/50 text-[13px] font-light leading-relaxed">{exhibition.details.medium}</p>
+                <p className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase mb-2">Medium</p>
+                <p className="text-[13px] font-normal leading-relaxed" style={{ color: '#D4D4D4' }}>{exhibition.details.medium}</p>
               </div>
               <div>
-                <p className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase mb-2">Works</p>
-                <p className="text-foreground/50 text-[13px] font-light leading-relaxed">{exhibition.details.works}</p>
+                <p className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase mb-2">Works</p>
+                <p className="text-[13px] font-normal leading-relaxed" style={{ color: '#D4D4D4' }}>{exhibition.details.works}</p>
               </div>
               <div>
-                <p className="text-[11px] text-foreground/20 tracking-[0.15em] uppercase mb-2">Curated by</p>
-                <p className="text-foreground/50 text-[13px] font-light leading-relaxed">{exhibition.details.curated}</p>
+                <p className="text-[11px] text-foreground/45 tracking-[0.15em] uppercase mb-2">Curated by</p>
+                <p className="text-[13px] font-normal leading-relaxed" style={{ color: '#D4D4D4' }}>{exhibition.details.curated}</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const ExhibitionDetail = () => {
           </div>
           <div className="space-y-8">
             {exhibition.description.map((para, i) => (
-              <p key={i} className="text-foreground/55 text-[15px] font-light leading-[1.9]">
+              <p key={i} className="text-[15px] font-normal leading-[1.95]" style={{ color: '#D4D4D4' }}>
                 {para}
               </p>
             ))}
@@ -133,7 +133,7 @@ const ExhibitionDetail = () => {
                 <span className="text-gold text-[11px] tracking-[0.3em] uppercase font-normal">Virtual Exhibition</span>
               </div>
               <div>
-                <p className="text-foreground/55 text-[15px] font-light leading-[1.9] mb-6">
+                <p className="text-[15px] font-normal leading-[1.95] mb-6" style={{ color: '#D4D4D4' }}>
                   Step inside the 3D gallery space and explore each work at your own pace.
                 </p>
                 <a
@@ -169,12 +169,12 @@ const ExhibitionDetail = () => {
             <div className="divide-y divide-border">
               {exhibition.participants.map((artist) => (
                 <div key={artist.name} className="py-6 first:pt-0 last:pb-0 md:grid md:grid-cols-[1fr_2fr] md:gap-12">
-                  <p className="text-foreground text-lg md:text-xl font-light tracking-tight mb-3 md:mb-0">
+                  <p className="text-white text-lg md:text-xl font-normal tracking-tight mb-3 md:mb-0">
                     {artist.name}
                   </p>
                   <ul className="space-y-2">
                     {artist.works.map((work) => (
-                      <li key={work} className="text-foreground/50 text-[14px] font-light italic leading-relaxed">
+                      <li key={work} className="text-[14px] font-normal italic leading-relaxed" style={{ color: '#D4D4D4' }}>
                         {work}
                       </li>
                     ))}
@@ -211,7 +211,7 @@ const ExhibitionDetail = () => {
             to={`/exhibition/${prevExhibition.slug}`}
             className="group border-r border-border px-6 md:px-12 lg:px-20 py-12 md:py-16 hover:bg-secondary/30 transition-colors duration-500"
           >
-            <div className="flex items-center gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
+            <div className="flex items-center gap-3 text-foreground/40 text-[11px] tracking-[0.15em] uppercase mb-4">
               <ArrowLeft size={14} /> Previous
             </div>
             <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
@@ -223,7 +223,7 @@ const ExhibitionDetail = () => {
             to={`/exhibition/${nextExhibition.slug}`}
             className="group px-6 md:px-12 lg:px-20 py-12 md:py-16 text-right hover:bg-secondary/30 transition-colors duration-500"
           >
-            <div className="flex items-center justify-end gap-3 text-foreground/20 text-[11px] tracking-[0.15em] uppercase mb-4">
+            <div className="flex items-center justify-end gap-3 text-foreground/40 text-[11px] tracking-[0.15em] uppercase mb-4">
               Next <ArrowRight size={14} />
             </div>
             <p className="text-lg md:text-2xl font-light text-foreground/50 group-hover:text-foreground transition-colors duration-500 tracking-tight">
