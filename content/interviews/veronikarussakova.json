@@ -1,0 +1,120 @@
+{
+  "slug": "VeronikaRussakova",
+  "title": "Beyond the Static Frame through Nature, Structure, and Digital Motion",
+  "artist": "Veronika Russakova",
+  "date": "25 Sep 2026",
+  "thumbnail": "/images/uploads/veronika_russakova_residualself_the-entanglement-1-.png",
+  "artistPhoto": "/images/uploads/img_3408-1-.jpg",
+  "bio": "Veronika Russakova is a London-based graphic designer whose practice explores generative systems as tools for visual storytelling and communication. Working across digital media, real-time simulation and visual coding, she develops innovative approaches that push graphic design beyond static forms.\n\nHer practice focuses on developing original visual languages that bring graphic elements to life through generative processes. By exploring dynamic relationships between form, movement, and systems, she creates engaging visual experiences that reveal connections, structures and processes that often remain unseen.\n",
+  "content": [
+    {
+      "type": "question",
+      "text": "Could you introduce yourself to our readers?"
+    },
+    {
+      "type": "answer",
+      "text": "I'm Veronika Russakova, a Kazakhstan-born, London-based graphic designer. \n\nGraphic design is the foundation of my practice which I extend through motion graphics, real-time generative simulation and visual coding. I create design experiences that engage viewers and tell stories through visual language. My aim is to push graphic design beyond the static form, using generative tools to make work that moves, evolves and surprises. Alongside my personal practice, I work in a design agency applying these skills to commercial projects for brands."
+    },
+    {
+      "type": "question",
+      "text": "How did you first get into visual design? And what led you to move toward generative systems and code-based creation?"
+    },
+    {
+      "type": "answer",
+      "text": "I graduated from Nottingham Trent University in 2025 with a degree in Graphic Design. What first drew me to the discipline was its versatility. Graphic design let me work across typography, 3D, print, strategy and motion and I was fascinated by how many skills you could build and how combining them could produce something unique and unexpected.\n\nAt university, we had a technical team working across 3D, real-time generative simulation and visual coding. That was my first encounter with these tools but they felt out of reach at the time. A year later, while working in a design agency I began building custom digital design tools with code, using AI to help me write and prototype them.My design director then encouraged me to experiment with node-based visual programming in TouchDesigner. It opened up a huge range of possibilities for my practice and I was excited by how far generative design can take graphic design beyond the static image.\n"
+    },
+    {
+      "type": "question",
+      "text": "Your work often revolves around the dynamic relationship between nature, structure, and hidden processes. How did you arrive at this core theme?"
+    },
+    {
+      "type": "answer",
+      "text": "When I started working with real-time generative tools I was fascinated by how much variation a single system can produce. A generative piece never behaves in an entirely predictable way. The movement, colour and form all shift within the rules I set, so the result always holds an element of surprise. Nature works in a similar way. It is shaped by hidden processes such as growth, decay and exchange which produce endlessly varied, unpredictable and beautiful results. A forest for example, looks like a collection of separate trees but behaves as one connected system. That parallel led me to combine the two. I use nature as source imagery and generative systems as a language to reveal the structures and processes beneath the surface.\n"
+    },
+    {
+      "type": "question",
+      "text": "Could you walk us through your creative process, from initial concept to final piece?"
+    },
+    {
+      "type": "answer",
+      "text": "Most of the time I never know how my final outcome is gonna look. I mostly start with I rarely know what a piece will look like at the start, so my process is closer to experimentation than to executing a fixed plan. I usually begin with a theme around the intersection of nature, often from a single photograph or collage that becomes my raw material. I translate that image into a generative system in TouchDesigner turning it into particle clouds and shaping their behaviour with noise. Because everything runs in real time, I can adjust the system live and respond to what it gives me, so the piece is shaped through that back-and-forth rather than decided in advance. The design work then becomes curation. Choosing the moment, the movement and the composition that work. Finally, I bring the result into motion graphics finishing, where typography and treatment turn a simulation into a designed piece."
+    },
+    {
+      "type": "question",
+      "text": "What tools or methods do you primarily use in your creative process (e.g. code, software, algorithms)?"
+    },
+    {
+      "type": "answer",
+      "text": "I think of my toolkit in terms of what each part does. For image preparation and collage I use Adobe Photoshop, Lightroom for colour grading and Illustrator for vector artwork. TouchDesigner is my generative engine, where I build real-time particle systems and drive them with noise to create organic movement. After Effects handles motion and finishing, including typography, compositing and final effects. For custom coded design tools I work with AI assistants: Claude and Google AI Studio to help write and prototype the code. The methods that tie it together are particle systems, noise-based motion and live parameter control, so I can experiment quickly and let the work evolve."
+    },
+    {
+      "type": "question",
+      "text": "The title \"Falls Into Becoming\" carries a sense of something unfinished, something still in the process of becoming. Could you tell us about the starting point of this piece?"
+    },
+    {
+      "type": "answer",
+      "text": "The piece began with a fascination with what happens when an abandoned building is reclaimed and transformed by the forces of nature. Over time, this unfolds through a gradual process called ecological succession and there is something strangely beautiful about that decay. A place that was once full of life ends up telling a completely different kind of story, and nature always finds a way.\n\nThat led me to explore decay not as an ending but as a continuous process of transformation. What falls apart becomes something else, reshaped by the same forces that shape nature itself. I started with photographs of old churches, structures we tend to think of as permanent and collaging them with fragments of the surrounding forest so that architecture and nature shared the same space. I then reimagined those collages as digital moving posters through generative point cloud simulation. Working generatively added another layer to the idea, because I set the conditions and the system responds, much as nature does. That is where the title comes from: every form is caught mid-transformation, never finished falling apart and never finished becoming."
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/falls-into-becoming_exhibition.jpg",
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "caption": "Falls Into Becoming",
+      "src": "/images/uploads/1231311.jpg"
+    },
+    {
+      "type": "question",
+      "text": "Could you walk us through the full creative process behind \"Residual Self\"？"
+    },
+    {
+      "type": "answer",
+      "text": "Residual Self began with an idea of what happens when the human memory no longer stays inside the brain. The neural pathways that once stored our experience are increasingly mirrored by servers, cloud storage and algorithms that preserve fragments of our identity. Every photograph, message, search, location and biometric record adds to an external nervous system that exists beyond the body. I wanted to explore what happens when these biological and digital systems begin to overlap, and the line between remembering and archiving starts to dissolve.\n\nTo give that idea a visual form, I looked at the structure of neural networks and contemporary data systems and how closely they resemble each other: branching, interconnected and constantly reorganising. I then built a generative system in TouchDesigner that continuously produces evolving forms which read as both neural pathways and technological networks.\n\nI chose a generative approach because digital memory is never a fixed archive. It is constantly collected, reorganised and reproduced, so the work exists as a dynamic system in constant transformation rather than a finished image."
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/untitled-34.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/untitled-341.jpg",
+      "caption": "Residual Self"
+    },
+    {
+      "type": "question",
+      "text": "Beyond design and technology, are there other fields or experiences that feed into your creative work?"
+    },
+    {
+      "type": "answer",
+      "text": "Travel is one of my biggest influences. Coming from Kazakhstan and now living in London, I'm always curious about how people live elsewhere. I love learning about different cultures and their everyday life, architecture and visual language they use. Even a small adventure around a city teaches me something new. Photography is how I hold on to those moments. I photograph what catches my eye, then revisit the images over time so they become a personal archive of inspiration that I return to and draw from in my work."
+    },
+    {
+      "type": "question",
+      "text": "How has living and working in London shaped your creative perspective?"
+    },
+    {
+      "type": "answer",
+      "text": "Moving from a small city in northwestern Kazakhstan to the UK was a huge change. Back home the design community is still very small, which has always frustrated me because I believe design is one of the strongest communication tools we have. Here I found a design community and opportunities for young artists that I had never had access to. Being surrounded by beautiful designs every day has sharpened my eye and raised my standards. Exhibiting at New Designers and D&AD New Blood, and this year in two London Design Festival partner exhibitions gave me a real sense of belonging. I went from admiring this community from the outside to being part of it. I've met many talented people whose work inspires me. Joining the Chartered Society of Designers has connected me further with the professional design community. Creating work that can be seen and appreciated, and that communicates my ideas, is the most rewarding part, along with having a community of like-minded people around me."
+    },
+    {
+      "type": "question",
+      "text": "What are you currently working on? What projects or goals are you most looking forward to in the near future?"
+    },
+    {
+      "type": "answer",
+      "text": "I'm currently deepening my knowledge of TouchDesigner and developing my design skills more broadly. Most recently I've been learning how to make audio-reactive visuals, where sound drives the movement of a generative system and projection mapping, which lets me take work off the screen and onto physical surfaces. Looking ahead, I want to build bigger projects that can appear in larger formats. I'm excited to keep developing my own body of generative design work and to share it with more people."
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/31231.jpg",
+      "caption": "Dalia Moving Post"
+    },
+    {
+      "type": "image",
+      "src": "/images/uploads/2132.jpg",
+      "caption": "Undercurrent Moving Post"
+    }
+  ]
+}
