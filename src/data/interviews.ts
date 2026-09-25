@@ -22,4 +22,7 @@ export const interviews: Interview[] = (
   Object.values(modules) as Array<{ default: Interview }>
 )
   .map((m) => m.default)
-  .sort((a, b) => a.date.localeCompare(b.date));
+  .sort((a, b) => {
+    const parse = (d: string) => new Date(d).getTime();
+    return parse(b.date) - parse(a.date); // newest first
+  });
