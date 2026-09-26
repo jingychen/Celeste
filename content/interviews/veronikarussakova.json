@@ -61,9 +61,9 @@
       "caption": ""
     },
     {
-      "type": "image",
-      "caption": "Falls Into Becoming",
-      "src": "/images/uploads/1231311.jpg"
+      "type": "video",
+      "src": "https://drive.google.com/file/d/1W0S6AE0sGT_gon_C-_xzrVv850H86iey/view",
+      "caption": "Becoming_Moving Poster"
     },
     {
       "type": "question",
@@ -74,13 +74,9 @@
       "text": "Residual Self began with an idea of what happens when the human memory no longer stays inside the brain. The neural pathways that once stored our experience are increasingly mirrored by servers, cloud storage and algorithms that preserve fragments of our identity. Every photograph, message, search, location and biometric record adds to an external nervous system that exists beyond the body. I wanted to explore what happens when these biological and digital systems begin to overlap, and the line between remembering and archiving starts to dissolve.\n\nTo give that idea a visual form, I looked at the structure of neural networks and contemporary data systems and how closely they resemble each other: branching, interconnected and constantly reorganising. I then built a generative system in TouchDesigner that continuously produces evolving forms which read as both neural pathways and technological networks.\n\nI chose a generative approach because digital memory is never a fixed archive. It is constantly collected, reorganised and reproduced, so the work exists as a dynamic system in constant transformation rather than a finished image."
     },
     {
-      "type": "image",
-      "src": "/images/uploads/untitled-34.jpg"
-    },
-    {
-      "type": "image",
-      "src": "/images/uploads/untitled-341.jpg",
-      "caption": "Residual Self"
+      "type": "video",
+      "src": "https://drive.google.com/file/d/1M0DVg8CNET8Lo67niPXEIv5FNnnf_0Vw/view",
+      "caption": "Residual Self_Memory"
     },
     {
       "type": "question",
@@ -107,14 +103,9 @@
       "text": "I'm currently deepening my knowledge of TouchDesigner and developing my design skills more broadly. Most recently I've been learning how to make audio-reactive visuals, where sound drives the movement of a generative system and projection mapping, which lets me take work off the screen and onto physical surfaces. Looking ahead, I want to build bigger projects that can appear in larger formats. I'm excited to keep developing my own body of generative design work and to share it with more people."
     },
     {
-      "type": "image",
-      "src": "/images/uploads/31231.jpg",
-      "caption": "Dalia Moving Post"
-    },
-    {
-      "type": "image",
-      "src": "/images/uploads/2132.jpg",
-      "caption": "Undercurrent Moving Post"
+      "type": "video",
+      "src": "https://drive.google.com/file/d/1bHpX-iwxah6tC1OE4bCFnTDI-txCtCWM/view",
+      "caption": "Dahlia_Moving Poster"
     }
   ]
 }
