@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { interviews, InterviewBlock } from "@/data/interviews";
+import { interviews, InterviewBlock, toEmbedUrl } from "@/data/interviews";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -25,6 +25,29 @@ const ContentBlock = ({ block }: { block: InterviewBlock }) => {
         <p className="text-[15px] md:text-[16px] font-normal leading-[1.95]" style={{ color: '#D4D4D4' }}>
           {block.text}
         </p>
+      </div>
+    );
+  }
+
+  if (block.type === 'video' && block.src) {
+    const embedSrc = toEmbedUrl(block.src);
+    return (
+      <div className="my-4">
+        <div className="relative w-full aspect-video overflow-hidden">
+          <iframe
+            src={embedSrc}
+            title={block.caption ?? 'Video'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
+            loading="lazy"
+            className="absolute inset-0 w-full h-full border-0"
+          />
+        </div>
+        {block.caption && (
+          <p className="text-white/35 text-[12px] tracking-[0.1em] font-normal mt-3 italic">
+            {block.caption}
+          </p>
+        )}
       </div>
     );
   }

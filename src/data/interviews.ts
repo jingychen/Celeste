@@ -1,8 +1,26 @@
 export interface InterviewBlock {
-  type: 'question' | 'answer' | 'image';
+  type: 'question' | 'answer' | 'image' | 'video';
   text?: string;
   src?: string;
   caption?: string;
+}
+
+/** Convert YouTube / Google Drive share URLs to embeddable URLs */
+export function toEmbedUrl(url: string): string {
+  if (!url) return url;
+
+  // YouTube: youtube.com/watch?v=ID or youtu.be/ID
+  const ytMatch =
+    url.match(/youtube\.com\/watch\?v=([^&]+)/) ||
+    url.match(/youtu\.be\/([^?]+)/);
+  if (ytMatch) return `https://www.youtube.com/embed/${ytMatch[1]}`;
+
+  // Google Drive: /file/d/ID/view  →  /file/d/ID/preview
+  const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (driveMatch) return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+
+  // Already an embed URL or unknown — use as-is
+  return url;
 }
 
 export interface Interview {
