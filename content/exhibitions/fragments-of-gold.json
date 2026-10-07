@@ -90,11 +90,11 @@
   "number": "02",
   "slug": "The-Ghost-in-the-Space",
   "poster": "/images/uploads/group-31.png",
-  "featured": true,
+  "featured": false,
   "date": "Aug 12 — Sep 12, 2026",
   "status": "upcoming",
   "location": "Online",
-  "virtualOpen": true,
+  "virtualOpen": false,
   "title": "The Ghost in the  Space",
   "images": [
     "/images/uploads/untitled-37.jpg",
