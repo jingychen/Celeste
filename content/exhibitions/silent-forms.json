@@ -1,18 +1,78 @@
 {
+  "participants": [
+    {
+      "name": "Xiaowei Shan",
+      "works": [
+        "The Mirror of the Other",
+        "The Cage"
+      ]
+    },
+    {
+      "name": "Zivia(Yanzhen) Li ",
+      "works": [
+        "The Smart Mirror: An Interface of Data and Identity"
+      ]
+    },
+    {
+      "name": "Ilona Joy",
+      "works": [
+        "Same, but different",
+        "She Blossoms Online",
+        "Be Youself",
+        "Dream-land"
+      ]
+    },
+    {
+      "name": "Yaning Xiong",
+      "works": [
+        "Algorithmic Shadow"
+      ]
+    },
+    {
+      "name": "Cameron Lings",
+      "works": [
+        "Social Constructs and The Self"
+      ]
+    },
+    {
+      "name": "Zhaojia Zhang",
+      "works": [
+        "AI Substance"
+      ]
+    },
+    {
+      "name": "Sudipta Modi",
+      "works": [
+        "In loving memory fossil",
+        "Love is here in our DNA",
+        "I love under your radar of love"
+      ]
+    },
+    {
+      "name": "Darren Greenblatt",
+      "works": [
+        "Demitri, Dior Chapeau",
+        "Rory, Black Briefs",
+        "Kay, Black Tank",
+        "Blindfold, Hermes Scarf"
+      ]
+    }
+  ],
   "details": {
-    "medium": "Porcelains, Sculpture, Paintings, Digital Arts, Animation, Installations",
+    "medium": "Paintings, Digital Arts, Animation, Installations",
     "works": "17",
     "curated": "Calista Chen"
   },
+  "embedCode": "<!--begin kunstmatrix--> <iframe allowfullscreen=\"true\" title=\"virtual exhibition\" frameborder=\"0\" scrolling=\"no\" src=\"https://art.kunstmatrix.com/apps/artspaces/?external=true&language=en&uid=142727&exhibition=16011875\" width=\"100%\" height=\"600\"></iframe><!--end kunstmatrix-->",
   "artist": "Collective Exhibition",
   "number": "03",
   "slug": "The-Narcissus-Protocol",
   "poster": "/images/uploads/narcissus-poster.png",
-  "featured": false,
+  "featured": true,
   "date": "Oct 8 — Nov 8, 2026",
   "status": "upcoming",
   "location": "Online",
-  "virtualOpen": false,
+  "virtualOpen": true,
   "title": "The Narcissus  Protocol",
   "images": [],
   "description": "This group show focuses on how social media algorithms create a \"digital Narcissus.\" The exhibition questions whether our \"self\" is just a feedback loop generated to keep us scrolling."
